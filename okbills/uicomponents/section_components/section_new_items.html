@@ -1,0 +1,398 @@
+      <!---Internal Fileupload css-->
+    <link href="../assets/plugins/fileuploads/css/fileupload.css" rel="stylesheet" type="text/css">
+    <!---Internal Fancy uploader css-->
+    <link href="../assets/plugins/fancyuploder/fancy_fileupload.css" rel="stylesheet" />  
+      <div class="row">
+          <div class="col-12 col-sm-12 col-xl-12 col-lg-12">
+            <div class="col-12 col-sm-12 col-lg-12 col-xl-12">
+                <div class="card card-primary">
+                    <div class="card-header pb-0">
+                        <h5 class="card-title mb-0 pb-0">Add New Items</h5>
+                    </div>
+                    <div class="card-body text-primary">
+                    </div>
+                <div class="card-footer formcontrol2">
+                    <div class="alert alert-outline-danger mg-b-10" id="Fields" role="alert">
+                        <button aria-label="Close" class="close" data-dismiss="alert" type="button">
+                        <span aria-hidden="true">&times;</span></button>
+                        <strong>  All fields are required.</strong> 
+                    </div>
+                    <div class="alert alert-outline-success mg-b-10" id="itemcreated" role="alert">
+                        <button aria-label="Close" class="close" data-dismiss="alert" type="button">
+                        <span aria-hidden="true">&times;</span></button>
+                        <strong> Well done ! New Items has added.</strong> 
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <div class="mb-3">
+                                <p class="mg-b-10">TAX SLAB</p>
+                                <select class="SlectBox form-control form-control-sm" id="ptaxr">
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-sm-2">
+                            <div class="mb-3">
+                                <p class="mg-b-10"></p>
+                                <a class="btn btn-sm btn-primary tpButton mg-t-15"   data-target="#modaldemo1" data-toggle="modal" href="">
+                                    <i class="fa fa-plus" > add</i>
+                                </a>
+                                <a href="#" class="btn btn-sm btn-info tpButton mg-t-15" data-target="#modaldemo2" data-toggle="modal" href="" onclick="edittax();">
+                                <i class="las la-pen"> edit</i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="mb-3">
+                                <p class="mg-b-10">Product Company</p>
+                                <select class="SlectBox form-control form-control-sm" id="Pcompany">
+                                    <option>Genral</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-sm-2">
+                            <div class="mb-3">
+                                <p class="mg-b-10"></p>
+                                <a class="btn btn-sm btn-primary  mg-t-15"   data-target="#modaldemo3" data-toggle="modal" href="">
+                                    <i class="fa fa-plus" > add</i>
+                                </a>
+                                <a href="#" class="btn btn-sm btn-info tpButton mg-t-15" data-target="#modaldemo4" data-toggle="modal" href="">
+                                <i class="las la-pen"> edit</i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-sm-12">
+                                <div class="mb-3">
+                                    <p class="mg-b-10">ITEM NAME</p>
+                                    <input class="form-control form-control-sm" type="text" id="itemname">
+                                </div>
+                        </div>
+                          <div class="col-sm-4">
+                              <div class="mb-3">
+                                  <p class="mg-b-10">ITEM HSN/SAC</p>
+                                  <input class="form-control form-control-sm" type="text" id="itemhsc">
+                              </div>
+                          </div>
+                          <div class="col-sm-4">
+                            <div class="mb-3">
+                                <p class="mg-b-10">PRODUCT CODE</p>
+                                <input class="form-control form-control-sm" type="number" id="itemcode">
+                            </div>
+                        </div>
+                          <div class="col-sm-4">
+                              <div class="mb-3">
+                                  <p class="mg-b-10">PRODUCT CATEGORY</p>
+                                  <select class="SlectBox form-control form-control-sm" id="category" required>
+                                  </select>
+                              </div>
+                          </div>
+                          <div class="col-sm-4">
+                              <div class="mb-3">
+                                  <p class="mg-b-10">SALE PRICE</p>
+                                  <input class="form-control form-control-sm" type="number" id="saleprice">
+                              </div>
+                            </div>
+                        
+                          <div class="col-sm-4">
+                              <div class="mb-3">
+                                  <p class="mg-b-10">PURCHASE PRICE</p>
+                                  <input class="form-control form-control-sm" type="number" id="purchaseprice">
+                              </div>
+                          </div>
+                          <div class="col-sm-4">
+                            <div class="mb-3">
+                                <p class="mg-b-10">Opening Stock</p>
+                                <input class="form-control form-control-sm" type="number" id="openings">
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="mb-3">
+                                <p class="mg-b-10">Alert Stock</p>
+                                <input class="form-control form-control-sm" type="number" id="minstock">
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="mb-3">
+                                <p class="mg-b-10">Unit</p>
+                                <select class="SlectBox form-control form-control-sm" id="priceunit" required>
+                                </select>
+                            </div>
+                        </div>
+                          <div class="col-sm-4">
+                              <div class="mb-3">
+                                  <p class="mg-b-10">ITEM LOCATION</p>
+                                  <input class="form-control form-control-sm" type="text" id="itemloc">
+                              </div>
+                          </div>
+                          
+                          <div class="col-sm-4">
+                            <div class="mb-3">
+                                <p class="mg-b-10">DATE</p>
+                                <div class="input-group ">
+                                    <div class="input-group-prepend">
+                                        <div class="input-group-text">
+                                            <i class="typcn typcn-calendar-outline tx-24 lh--9 op-6"></i>
+                                        </div>
+                                    </div><input class="form-control form-control-sm fc-datepicker" id="cdate" placeholder="MM/DD/YYYY" type="date">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="mb-3">
+                                <p class="mg-b-10">Default Discount</p>
+                                <input class="form-control form-control-sm" type="text" id="def-dis">
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="mb-3">
+                                <p class="mg-b-10">Description</p>
+                                <input class="form-control form-control-sm" type="text" id="itemloc">
+                            </div>
+                        </div>
+                        <div class="col-sm-2">
+                              <div class="mb-3">
+                                  <p class="mg-b-10">ATTACH IMAGE</p>
+                                  <input type="file" class="dropify" data-height="100" id="image">
+                              </div>
+                          </div>
+                          <div class="modal-footer">
+                            <button class="btn ripple btn-primary" onclick="additems();" style="width: 120px;" type="button">Save</button>
+                            <button class="btn ripple btn-outline-primary" type="button" >Save & New</button>
+                        </div>
+                    </div>
+                 </div>
+                </div>
+            </div>
+          </div>
+      </div>
+      <div class="modal" id="modaldemo1">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content modal-content-demo">
+                <div class="modal-header">
+                    <h6 class="modal-title">TAX SLAB ENTRY</h6><button aria-label="Close" class="close" data-dismiss="modal" type="button"><span aria-hidden="true">&times;</span></button>
+                </div>
+                <div class="modal-body">
+                    <div class="alert alert-outline-success mg-b-10" id="taxslab" role="alert">
+                        <button aria-label="Close" class="close" data-dismiss="alert" type="button">
+                        <span aria-hidden="true">&times;</span></button>
+                        <strong> Well done ! New Items has added.</strong> 
+                    </div>
+                    <div class="alert alert-outline-danger mg-b-10" id="taxslabFields" role="alert">
+                        <button aria-label="Close" class="close" data-dismiss="alert" type="button">
+                        <span aria-hidden="true">&times;</span></button>
+                        <strong>  All fields are required.</strong> 
+                    </div>
+                    <div class="row">
+                       <div class="col-sm-12">
+                            <div class="mb-3">
+                                <p class="mg-b-10">Tax Slab Tittle</p>
+                                <input class="form-control form-control-sm taxtittle" type="text" >
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="mb-3">
+                                <p class="mg-b-10">Tax %</p>
+                                <input class="form-control form-control-sm taxprs" type="text" >
+                            </div>
+                        </div>
+                        <div class="col-sm-8">
+                            <div class="mb-3">
+                                <p class="mg-b-10">Catogery</p>
+                                <select class="SlectBox form-control form-control-sm catogery">
+                                <option>Goods</option>
+                                <option>Services</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="mb-3">
+                                <p class="mg-b-10">Cess %</p>
+                                <input class="form-control form-control-sm cess" type="text">
+                            </div>
+                        </div>
+                        <div class="col-sm-8">
+                            <div class="mb-3">
+                                <p class="mg-b-10">Applicable on</p>
+                                <select class="SlectBox form-control form-control-sm applicable">
+                                    <option>Tax Amt</option>
+                                    <option>Taxable Amt</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="mb-3">
+                                <p class="mg-b-10">Special Cess %</p>
+                                <input class="form-control form-control-sm special_cs" type="text" >
+                            </div>
+                        </div>
+                        <div class="col-sm-8">
+                            <div class="mb-3">
+                                <p class="mg-b-10">As Per</p>
+                                <select class="SlectBox form-control form-control-sm asper"></select>
+                            </div>
+                        </div>
+                        <div class="col-sm-8">
+                            <div class="mb-3">
+                                <p class="mg-b-10">Calculate Tax</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="mb-3">
+                                <label class="ckbox"><input type="checkbox" name="checkbox" value="On MRP"><span>On MRP</span></label>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="mb-3">
+                                <label class="ckbox float-left"><input type="checkbox" name="checkbox" value="On Free Goods Also"><span>On Free Goods Also</span></label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn ripple btn-primary" type="button" onclick="taxslab();">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal" id="modaldemo2">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content modal-content-demo">
+                <div class="modal-header">
+                    <h6 class="modal-title">Basic Modal</h6><button aria-label="Close" class="close" data-dismiss="modal" type="button"><span aria-hidden="true">&times;</span></button>
+                </div>
+                <div class="modal-body">
+                    <div class="alert alert-outline-success mg-b-10" id="edit_taxslab" role="alert">
+                        <button aria-label="Close" class="close" data-dismiss="alert" type="button">
+                        <span aria-hidden="true">&times;</span></button>
+                        <strong> Well done ! New Items has added.</strong> 
+                    </div>
+                    <div class="alert alert-outline-danger mg-b-10" id="etaxslabFields"         role="alert">
+                        <button aria-label="Close" class="close" data-dismiss="alert" type="button">
+                        <span aria-hidden="true">&times;</span></button>
+                        <strong>  All fields are required.</strong> 
+                    </div>
+                    <div class="row">
+                       <div class="col-sm-12">
+                            <div class="mb-3">
+                                <p class="mg-b-10">Tax Slab Tittle</p>
+                                <input class="form-control form-control-sm taxtittle" type="text" >
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="mb-3">
+                                <p class="mg-b-10">Tax %</p>
+                                <input class="form-control form-control-sm taxprs" type="text" >
+                            </div>
+                        </div>
+                        <div class="col-sm-8">
+                            <div class="mb-3">
+                                <p class="mg-b-10">Catogery</p>
+                                <select class="SlectBox form-control form-control-sm catogery">
+                                <option>Goods</option>
+                                <option>Services</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="mb-3">
+                                <p class="mg-b-10">Cess %</p>
+                                <input class="form-control form-control-sm cess" type="text">
+                            </div>
+                        </div>
+                        <div class="col-sm-8">
+                            <div class="mb-3">
+                                <p class="mg-b-10">Applicable on</p>
+                                <select class="SlectBox form-control form-control-sm applicable">
+                                    <option>Tax Amt</option>
+                                    <option>Taxable Amt</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="mb-3">
+                                <p class="mg-b-10">Special Cess %</p>
+                                <input class="form-control form-control-sm special_cs" type="text" >
+                            </div>
+                        </div>
+                        <div class="col-sm-8">
+                            <div class="mb-3">
+                                <p class="mg-b-10">As Per</p>
+                                <select class="SlectBox form-control form-control-sm asper"></select>
+                            </div>
+                        </div>
+                        <div class="col-sm-8">
+                            <div class="mb-3">
+                                <p class="mg-b-10">Calculate Tax</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="mb-3">
+                                <label class="ckbox"><input type="checkbox" name="checkbox" value="On MRP"><span>On MRP</span></label>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="mb-3">
+                                <label class="ckbox float-left"><input type="checkbox" name="checkbox" value="On Free Goods Also"><span>On Free Goods Also</span></label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn ripple btn-primary" type="button" id="taxslab_edt" >Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal" id="modaldemo3">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content modal-content-demo">
+                <div class="modal-header">
+                    <h6 class="modal-title">Add Product Catogery</h6><button aria-label="Close" class="close" data-dismiss="modal" type="button"><span aria-hidden="true">&times;</span></button>
+                </div>
+                <div class="alert alert-outline-success mg-b-10" id="Product_cmy" role="alert">
+                    <button aria-label="Close" class="close" data-dismiss="alert" type="button">
+                    <span aria-hidden="true">&times;</span></button>
+                    <strong> product catougery has added.</strong> 
+                </div>
+                <div class="modal-body">
+                    <div class="alert alert-outline-danger mg-b-10" id="pro_comp"         role="alert">
+                        <button aria-label="Close" class="close" data-dismiss="alert" type="button">
+                        <span aria-hidden="true">&times;</span></button>
+                        <strong>  field is required.</strong> 
+                    </div>
+                    <input class="form-control form-control-sm product_company" type="text" id="">
+                </div>
+                <div class="modal-footer">
+                    <button class="btn ripple btn-primary" onclick="addp_comp();" type="button">Save </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal" id="modaldemo4">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content modal-content-demo">
+                <div class="modal-header">
+                    <h6 class="modal-title">Basic Modal</h6><button aria-label="Close" class="close" data-dismiss="modal" type="button"><span aria-hidden="true">&times;</span></button>
+                </div>
+                <div class="modal-body">
+                    <input class="form-control form-control-sm" type="text" id="eitemhsc">
+                </div>
+                <div class="modal-footer">
+                    <button class="btn ripple btn-primary" type="button">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+        <!--Internal Fileuploads js-->
+        <script src="../assets/plugins/fileuploads/js/fileupload.js"></script>
+        <script src="../assets/plugins/fileuploads/js/file-upload.js"></script>
+
+        <!--Internal Fancy uploader js-->
+        <script src="../assets/plugins/fancyuploder/jquery.ui.widget.js"></script>
+        <script src="../assets/plugins/fancyuploder/jquery.fileupload.js"></script>
+        <script src="../assets/plugins/fancyuploder/jquery.iframe-transport.js"></script>
+        <script src="../assets/plugins/fancyuploder/jquery.fancy-fileupload.js"></script>
+        <script src="../assets/plugins/fancyuploder/fancy-uploader.js"></script>
+
+<script src="../jsfiles/newitem.js"></script>
+    
+<script src="../jsfiles/items_opt.js"></script>

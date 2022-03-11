@@ -1,0 +1,415 @@
+<link href="../assets/plugins/datatable/css/dataTables.bootstrap4.min.css" rel="stylesheet" />
+ <link href="../assets/plugins/datatable/css/buttons.bootstrap4.min.css" rel="stylesheet">
+ <link href="../assets/plugins/datatable/css/responsive.bootstrap4.min.css" rel="stylesheet" />
+ <link href="../assets/plugins/datatable/css/jquery.dataTables.min.css" rel="stylesheet">
+ <link href="../assets/plugins/datatable/css/responsive.dataTables.min.css" rel="stylesheet">
+ <div class="row">
+    <div class="col-sm-12">
+        <div class="card card-primary ">
+            <div class="card-header pb-0">
+                <h3>PARTIES</h3>
+                            <button class="btn btn-primary" data-target="#modaldemo30" data-toggle="modal" href=""><i class="la la-bar-chart fa-lg" ></i> Add New Party</button>
+            </div>
+            <div class="card-body" >
+            </div>
+                <div class="card-footer ">
+                </div>
+           </div>
+        </div>
+        <div class="col-sm-12">
+            <div class="card card-primary ">
+                <div class="card-header pb-0">
+                    <div class="d-flex justify-content-between">
+                        <h4 class="card-title mg-b-0">Manage Parties</h4>
+                        <i class="mdi mdi-dots-horizontal text-gray"></i>
+                    </div>
+                </div>
+                <div class="card-body">
+                  
+                </div>
+                    <div class="card-footer ">
+                        <div class="table-responsive">
+                            <table id="example1" width = "100%" class="manage_parties table key-buttons text-md-nowrap">
+                                <thead>
+                                    <tr>
+                                        <th class="wd-lg-8p"><span>S.NO</span></th>
+                                        <th class="wd-lg-20p"><span>Name</span></th>
+                                        <th class="wd-lg-20p"><span>Address</span></th>
+                                        <th class="wd-lg-20p"><span>Email</span></th>
+                                        <th class="wd-lg-20p"><span>Phone No.</span></th>
+                                        <th class="wd-lg-20p">Action</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="items_table">
+                                    
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+               </div>
+            </div>
+         </div>
+         <div class="modal" id="modaldemo30">
+            <div class="modal-dialog modal-lg" role="document">
+                <div class="modal-content modal-content-demo">
+                    <div class="modal-header">
+                        <h6 class="modal-title">Add Party</h6><button aria-label="Close" class="close" data-dismiss="modal" type="button"><span aria-hidden="true">&times;</span></button>
+                    </div>
+                    <div class="alert alert-solid-danger mg-b-10 partyFields" id="partyFields" role="alert">
+                        <button aria-label="Close" class="close" data-dismiss="alert" type="button">
+                       <span aria-hidden="true">&times;</span></button>
+                         <strong>  Party Name & Phone Number require.</strong> 
+                     </div>
+                     <div class="alert alert-success coustmer-add-alert" role="alert">                                 New Coustmer Added sucessfully
+                     <a href="#" class="alert-link"></a>.
+                      </div>
+                    <div class="modal-body">
+                         <!-- row closed -->
+                    <div class="panel panel-primary tabs-style-2">
+                        <div class=" tab-menu-heading">
+                            <div class="tabs-menu1">
+                                <!-- Tabs -->
+                                <ul class="nav panel-tabs main-nav-line">
+                                    <li><a href="#tab4" class="nav-link active" data-toggle="tab">Billing Address
+                                    </a></li>
+                                    <li><a href="#tab5" class="nav-link" data-toggle="tab">Shipping Address</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                <div class="panel-body tabs-menu-body main-content-body-right border">
+                    <div class="tab-content">
+                        <div class="tab-pane active" id="tab4">
+                            <form class="needs-validation was-validated">
+                                <div class="row row-sm">
+                                    <div class="col-sm-4">
+                                        <label>Coustmer Name</label>
+                                        <div class="form-group has-success mg-b-0 mb-4">
+                                            <input class="form-control coustmer" placeholder="Party name" required="" id="coustmer" type="text">
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-4">
+                                        <label>Phone number</label>
+                                        <div class="form-group has-success mg-b-0 mb-4">
+                                            <input class="form-control number" placeholder="Phone number" required="" id="phoneno" type="number">
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-4">
+                                        <label>Email Id</label>
+                                        <div class="form-group has-success mg-b-0 mb-4">
+                                            <input class="form-control eml" id="eml" placeholder="email id" required="" type="email">
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <label> Billing Address</label>
+                                        <div class="form-group has-success mg-b-0 mb-4">
+                                            <input class="form-control billingaddress" placeholder="Address" id="address" required="" type="text">
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <label>Country</label>
+                                        <div class="form-group has-success mg-b-0 mb-4">
+                                            <input class="form-control Country" placeholder="Country" id="Country" required="" type="text">
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <label>City</label>
+                                        <div class="form-group has-success mg-b-0 mb-4">
+                                            <input class="form-control City" placeholder="City" id="City" required="" type="text">
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <label>State</label>
+                                        <div class="form-group has-success mg-b-0 mb-4">
+                                            <input class="form-control state" placeholder="State" id="state" required="" type="text">
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <label>Religion</label>
+                                        <div class="form-group has-success mg-b-0 mb-4">
+                                            <input class="form-control religion" placeholder="Religion" id="Religion" required="" type="text">
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <label>As of Date</label>
+                                        <div class="form-group has-success mg-b-0 mb-4 asdate">
+                                            <input class="form-control adate" id="asdate" required="" type="Date">
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                                <div class="tab-pane" id="tab5">
+                                    <form class="needs-validation was-validated">
+                                        <div class="alert alert-solid-info" role="alert">
+                                            <button aria-label="Close" class="close" data-dismiss="alert" type="button">
+                                            <span aria-hidden="true">&times;</span></button>
+                                            <strong></strong> If You dont want to add shipping details so you can ignore.
+                                        </div>
+                                        <div class="row row-sm">
+                                            <div class="col-sm-4">
+                                                <label>Coustmer Name</label>
+                                                <div class="form-group has-success mg-b-0 mb-4">
+                                                    <input class="form-control scoustmer" placeholder="Party name" required="" id="coustmer" type="text">
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-4">
+                                                <label>Phone number</label>
+                                                <div class="form-group has-success mg-b-0 mb-4">
+                                                    <input class="form-control snumber" placeholder="Phone number" required="" id="phoneno" type="number">
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-4">
+                                                <label>Email Id</label>
+                                                <div class="form-group has-success mg-b-0 mb-4">
+                                                    <input class="form-control seml" id="eml" placeholder="email id" required="" type="email">
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6">
+                                                <label>Shipping Address</label>
+                                                <div class="form-group has-success mg-b-0 mb-4">
+                                                    <input class="form-control sbillingaddress" placeholder="Address" id="address" required="" type="text">
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6">
+                                                <label>Country</label>
+                                                <div class="form-group has-success mg-b-0 mb-4">
+                                                    <input class="form-control sCountry" placeholder="Country" id="Country" required="" type="text">
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6">
+                                                <label>City</label>
+                                                <div class="form-group has-success mg-b-0 mb-4">
+                                                    <input class="form-control sCity
+                                                    " placeholder="City" id="City" required="" type="text">
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6">
+                                                <label>State</label>
+                                                <div class="form-group has-success mg-b-0 mb-4">
+                                                    <input class="form-control sstate" placeholder="State" id="state" required="" type="text">
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6">
+                                                <label>Religion</label>
+                                                <div class="form-group has-success mg-b-0 mb-4">
+                                                    <input class="form-control sreligion" placeholder="Religion" id="Religion" required="" type="text">
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6">
+                                                <label>As of Date</label>
+                                                <div class="form-group has-success mg-b-0 mb-4 asdate">
+                                                    <input class="form-control sasdate" id="asdate" required="" type="Date">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn ripple btn-primary" type="button" onclick="addparty();">Save & New</button>
+                        <button class="btn ripple btn-outline-secondary" data-dismiss="modal" type="button" >Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal" id="modaldemo211">
+            <div class="modal-dialog modal-lg" role="document">
+                <div class="modal-content modal-content-demo">
+                    <div class="modal-header">
+                        <h6 class="modal-title">Add Party</h6><button aria-label="Close" class="close" data-dismiss="modal" type="button"><span aria-hidden="true">&times;</span></button>
+                    </div>
+                    <div class="alert alert-solid-danger mg-b-10 partyFields" id="partyFields" role="alert">
+                        <button aria-label="Close" class="close" data-dismiss="alert" type="button">
+                       <span aria-hidden="true">&times;</span></button>
+                         <strong>  Party Name & Phone Number require.</strong> 
+                     </div>
+                     <div class="alert alert-success coustmer-add-alert" role="alert">                                 New Coustmer Added sucessfully
+                     <a href="#" class="alert-link"></a>.
+                      </div>
+                    <div class="modal-body">
+                         <!-- row closed -->
+                <div class="panel panel-primary tabs-style-2">
+                    <div class=" tab-menu-heading">
+                        <div class="tabs-menu1">
+                            <!-- Tabs -->
+                            <ul class="nav panel-tabs main-nav-line">
+                                <li><a href="#tab7" class="nav-link active" data-toggle="tab">Billing Address
+                                </a></li>
+                                <li><a href="#tab8" class="nav-link" data-toggle="tab">Shipping Address</a></li>
+                            </ul>
+                        </div>
+                    </div>
+            <div class="panel-body tabs-menu-body main-content-body-right border">
+                <div class="tab-content">
+                    <div class="tab-pane active" id="tab7">
+                        <form class="needs-validation was-validated">
+                            <div class="row row-sm">
+                                <div class="col-sm-4">
+                                    <label>Coustmer Name</label>
+                                    <div class="form-group has-success mg-b-0 mb-4">
+                                        <input class="form-control ecoustmer" placeholder="Party name" required="" id="coustmer" type="text">
+                                    </div>
+                                </div>
+                                <div class="col-sm-4">
+                                    <label>Phone number</label>
+                                    <div class="form-group has-success mg-b-0 mb-4">
+                                        <input class="form-control enumber" placeholder="Phone number" required="" id="phoneno" type="number">
+                                    </div>
+                                </div>
+                                <div class="col-sm-4">
+                                    <label>Email Id</label>
+                                    <div class="form-group has-success mg-b-0 mb-4">
+                                        <input class="form-control eeml" id="eml" placeholder="email id" required="" type="email">
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <label> Billing Address</label>
+                                    <div class="form-group has-success mg-b-0 mb-4">
+                                        <input class="form-control ebillingaddress" placeholder="Address" id="address" required="" type="text">
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <label>Country</label>
+                                    <div class="form-group has-success mg-b-0 mb-4">
+                                        <input class="form-control eCountry" placeholder="Country" id="Country" required="" type="text">
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <label>City</label>
+                                    <div class="form-group has-success mg-b-0 mb-4">
+                                        <input class="form-control eCity" placeholder="City" id="City" required="" type="text">
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <label>State</label>
+                                    <div class="form-group has-success mg-b-0 mb-4">
+                                        <input class="form-control estate" placeholder="State" id="state" required="" type="text">
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <label>Religion</label>
+                                    <div class="form-group has-success mg-b-0 mb-4">
+                                        <input class="form-control ereligion" placeholder="Religion" id="Religion" required="" type="text">
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <label>As of Date</label>
+                                    <div class="form-group has-success mg-b-0 mb-4 asdate">
+                                        <input class="form-control eadate" id="asdate" required="" type="Date">
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                            <div class="tab-pane" id="tab8">
+                                <form class="needs-validation was-validated">
+                                    <div class="alert alert-solid-info" role="alert">
+                                        <button aria-label="Close" class="close" data-dismiss="alert" type="button">
+                                        <span aria-hidden="true">&times;</span></button>
+                                        <strong></strong> If You dont want to add shipping details so you can ignore.
+                                    </div>
+                                    <div class="row row-sm">
+                                        <div class="col-sm-4">
+                                            <label>Coustmer Name</label>
+                                            <div class="form-group has-success mg-b-0 mb-4">
+                                                <input class="form-control escoustmer" placeholder="Party name" required="" id="coustmer" type="text">
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-4">
+                                            <label>Phone number</label>
+                                            <div class="form-group has-success mg-b-0 mb-4">
+                                                <input class="form-control esnumber" placeholder="Phone number" required="" id="phoneno" type="number">
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-4">
+                                            <label>Email Id</label>
+                                            <div class="form-group has-success mg-b-0 mb-4">
+                                                <input class="form-control eseml" id="eml" placeholder="email id" required="" type="email">
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <label>Shipping Address</label>
+                                            <div class="form-group has-success mg-b-0 mb-4">
+                                                <input class="form-control esbillingaddress" placeholder="Address" id="address" required="" type="text">
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <label>Country</label>
+                                            <div class="form-group has-success mg-b-0 mb-4">
+                                                <input class="form-control esCountry" placeholder="Country" id="Country" required="" type="text">
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <label>City</label>
+                                            <div class="form-group has-success mg-b-0 mb-4">
+                                                <input class="form-control esCity
+                                                " placeholder="City" id="City" required="" type="text">
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <label>State</label>
+                                            <div class="form-group has-success mg-b-0 mb-4">
+                                                <input class="form-control esstate" placeholder="State" id="state" required="" type="text">
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <label>Religion</label>
+                                            <div class="form-group has-success mg-b-0 mb-4">
+                                                <input class="form-control esreligion" placeholder="Religion" id="Religion" required="" type="text">
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <label>As of Date</label>
+                                            <div class="form-group has-success mg-b-0 mb-4 asdate">
+                                                <input class="form-control esasdate" id="asdate" required="" type="Date">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                           
+                        </div>
+                    </div>
+                </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn ripple btn-primary" type="button" onclick="editparty();">Save & New</button>
+                        <button class="btn ripple btn-outline-secondary" data-dismiss="modal" type="button" >Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+       
+<!-- Internal Data tables -->
+ <script src="../assets/plugins/datatable/js/jquery.dataTables.min.js"></script>
+ <script src="../assets/plugins/datatable/js/dataTables.dataTables.min.js"></script>
+ <script src="../assets/plugins/datatable/js/dataTables.responsive.min.js"></script>
+ <script src="../assets/plugins/datatable/js/responsive.dataTables.min.js"></script>
+ <script src="../assets/plugins/datatable/js/jquery.dataTables.js"></script>
+ <script src="../assets/plugins/datatable/js/dataTables.bootstrap4.js"></script>
+ <script src="../assets/plugins/datatable/js/dataTables.buttons.min.js"></script>
+ <script src="../assets/plugins/datatable/js/buttons.bootstrap4.min.js"></script>
+ <script src="../assets/plugins/datatable/js/jszip.min.js"></script>
+ <script src="../assets/plugins/datatable/js/pdfmake.min.js"></script>
+ <script src="../assets/plugins/datatable/js/vfs_fonts.js"></script>
+ <script src="../assets/plugins/datatable/js/buttons.html5.min.js"></script>
+ <script src="../assets/plugins/datatable/js/buttons.print.min.js"></script>
+ <script src="../assets/plugins/datatable/js/buttons.colVis.min.js"></script>
+ <script src="../assets/plugins/datatable/js/dataTables.responsive.min.js"></script>
+ <script src="../assets/plugins/datatable/js/responsive.bootstrap4.min.js"></script>
+
+ <!--Internal  Datatable js -->
+ <script src="../assets/js/table-data.js"></script>
+ 
+ <script src="../jsfiles/manage_items.js"></script>
+
+ <!-- parties.js -->
+<script src="../jsfiles/parties.js"></script>
+
+
+

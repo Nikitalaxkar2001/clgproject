@@ -1,0 +1,123 @@
+      <!---Internal Fileupload css-->
+      <link href="../assets/plugins/fileuploads/css/fileupload.css" rel="stylesheet" type="text/css">
+      <!---Internal Fancy uploader css-->
+      <link href="../assets/plugins/fancyuploder/fancy_fileupload.css" rel="stylesheet" />  
+      <div class="row">
+        <div class="col-sm-12">
+            <div class="card card-primary ">
+                <div class="card-header pb-0">  
+                    <h4 class="text-center">Add New Supplier Details</h4>
+                </div>
+                <div class="card-body" >
+                </div>
+                    <div class="card-footer ">
+                        <div class="alert alert-outline-danger mg-b-10" id="Fields1" role="alert">
+                            <button aria-label="Close" class="close supp" data-dismiss="alert" type="button">
+                            <span aria-hidden="true">&times;</span></button>
+                            <strong>  All fields are required.</strong> 
+                        </div>
+                        <div class="alert alert-outline-success coustmer-add-alert" role="alert">                                 New Supplier Added sucessfully
+                            <a href="#" class="alert-link"></a>.
+                        </div>
+                    <div class="row row-sm">
+                        <div class="col-sm-4">
+                            <label>Supplier Name</label>
+                            <div class="form-group has-success mg-b-0 mb-4">
+                                <input class="form-control coustmer" placeholder="Supplier Name" required="" id="supp_name" type="text">
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <label>Company Name</label>
+                            <div class="form-group has-success mg-b-0 mb-4">
+                                <input class="form-control coustmer" placeholder="Company Name" required="" id="supp_com" type="text">
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <label>Phone number</label>
+                            <div class="form-group has-success mg-b-0 mb-4">
+                                <input class="form-control  number" placeholder="Phone number" required="" id="supp_phn" type="number">
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <label>Email Id</label>
+                            <div class="form-group has-success mg-b-0 mb-4">
+                                <input class="form-control  eml" id="supp_eml" placeholder="email id" required="" type="email">
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <label> Address</label>
+                            <div class="form-group has-success mg-b-0 mb-4">
+                                <input class="form-control  billingaddress" placeholder="Address" id="supp_add" required="" type="text">
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <label>Country</label>
+                            <div class="form-group has-success mg-b-0 mb-4">
+                                <input class="form-control  Country" placeholder="Country" id="supp_country" required="" type="text">
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <label>City</label>
+                            <div class="form-group has-success mg-b-0 mb-4">
+                                <input class="form-control  City" placeholder="City" id="supp_ct" required="" type="text">
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <label>State</label>
+                            <div class="form-group has-success mg-b-0 mb-4">
+                                <input class="form-control  state" placeholder="State" id="supp_state" required="" type="text">
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <label>Religion</label>
+                            <div class="form-group has-success mg-b-0 mb-4">
+                                <input class="form-control  religion" placeholder="Religion" id="supp_rel" required="" type="text">
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <label>Post Box</label>
+                            <div class="form-group has-success mg-b-0 mb-4">
+                                <input class="form-control  religion" placeholder="Post Box" id="supp_pb" required="" type="text">
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <label>Tax Id</label>
+                            <div class="form-group has-success mg-b-0 mb-4">
+                                <input class="form-control  religion" placeholder="Tax Id" id="supp_tax" required="" type="text">
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <label>As of Date</label>
+                            <div class="form-group has-success mg-b-0 mb-4 asdate">
+                                <input class="form-control  adate" id="supp_dt" required="" type="Date">
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="mb-3">
+                                <p class="mg-b-10">Suppliers Group</p>
+                                <select class="SlectBox form-control" id="supp_grp">
+                                </select>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button class="btn ripple btn-outline-primary " type="button" onclick="addsuppliers();">Save & New</button>
+                        </div>
+                    </div>
+                    </div>
+               </div>
+            </div>
+        </div> 
+        <!--Internal Fileuploads js-->
+          <script src="../assets/plugins/fileuploads/js/fileupload.js"></script>
+          <script src="../assets/plugins/fileuploads/js/file-upload.js"></script>
+          <!--Internal Fancy uploader js-->
+          <script src="../assets/plugins/fancyuploder/jquery.ui.widget.js"></script>
+          <script src="../assets/plugins/fancyuploder/jquery.fileupload.js"></script>
+          <script src="../assets/plugins/fancyuploder/jquery.iframe-transport.js"></script>
+          <script src="../assets/plugins/fancyuploder/jquery.fancy-fileupload.js"></script>
+          <script src="../assets/plugins/fancyuploder/fancy-uploader.js"></script>
+          <!--Suppliers-->
+          <script src="../jsfiles/Suppliers.js"></script>
+          <script src="../jsfiles/manage_suppliers.js"></script>  
+          <script src="../jsfiles/Suppliers_view.js"></script>  
+          

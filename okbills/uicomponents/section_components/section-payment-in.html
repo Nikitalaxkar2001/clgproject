@@ -1,0 +1,105 @@
+  <!-- Internal Data table css -->
+  <link href="../assets/plugins/datatable/css/dataTables.bootstrap4.min.css" rel="stylesheet" />
+  <link href="../assets/plugins/datatable/css/buttons.bootstrap4.min.css" rel="stylesheet">
+  <link href="../assets/plugins/datatable/css/responsive.bootstrap4.min.css" rel="stylesheet" />
+  <link href="../assets/plugins/datatable/css/jquery.dataTables.min.css" rel="stylesheet">
+  <link href="../assets/plugins/datatable/css/responsive.dataTables.min.css" rel="stylesheet">
+
+  <div class="row">
+    <div class="col-sm-12">
+        <div class="card card-success">
+            <div class="card-header pb-0">
+                <h5 class="card-title mb-0 pb-0">TRANSACTIONS</h5>
+            </div>
+            <div class="card-body ">
+                <div class="row">
+                    <div class="col-sm-4">
+                        <div class="mb-3">
+                            <p class="mg-b-10">FROM</p>
+                            <input class="form-control form-control-sm" id="companyn" type="date" required> 
+                        </div>
+                  </div>
+                    <div class="col-sm-4">
+                        <div class="mb-3">
+                            <p class="mg-b-10">TO</p>
+                            <input class="form-control form-control-sm" id="companyn" type="date" required> 
+                        </div>
+                  </div>
+                </div>
+                <div class="table-responsive border-top userlist-table">
+                    <table class="table card-table table-striped table-vcenter text-nowrap mb-0">
+                        <thead>
+                            <tr>
+                                <th class="wd-lg-8p"><span>Filter by</span></th>
+                                <th class="wd-lg-20p"><span>  <a href="#" >
+                                    <i> <select class="SlectBox form-control" id="SlectBox" required>
+                                       
+                                    </select></i>
+                                </a></span></th>
+                                <th class="wd-lg-20p"><span>  <a href="#" class="btn btn-sm btn-primary">
+                                    <i>+ Add Payment In</i>
+                                </a></span></th>
+                            </tr>
+                        </thead>
+                    </table>
+                 </div>
+             <div class="card-footer">
+                <div class="table-responsive">
+                    <table id="example" class="table key-buttons text-md-nowrap">
+                        <thead>
+                            <tr>
+                                <th class="border-bottom-0">DATE</th>
+                                <th class="border-bottom-0">REF NO.</th>
+                                <th class="border-bottom-0">NAME</th>
+                                <th class="border-bottom-0">TYPE</th>
+                                <th class="border-bottom-0">TOTAL</th>
+                                <th class="border-bottom-0">RECIVED/PAID</th>
+                                <th class="border-bottom-0">BALANCE</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Tiger Nixon</td>
+                                <td>System Architect</td>
+                                <td>Edinburgh</td>
+                                <td>61</td>
+                                <td>2011/04/25</td>
+                                <td>$320,800</td>
+                                <td>$450,800</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+             </div>
+        </div>
+    </div>
+  </div>
+ <!-- Internal Data tables -->
+ <script src="../assets/plugins/datatable/js/jquery.dataTables.min.js"></script>
+ <script src="../assets/plugins/datatable/js/dataTables.dataTables.min.js"></script>
+ <script src="../assets/plugins/datatable/js/dataTables.responsive.min.js"></script>
+ <script src="../assets/plugins/datatable/js/responsive.dataTables.min.js"></script>
+ <script src="../assets/plugins/datatable/js/jquery.dataTables.js"></script>
+ <script src="../assets/plugins/datatable/js/dataTables.bootstrap4.js"></script>
+ <script src="../assets/plugins/datatable/js/dataTables.buttons.min.js"></script>
+ <script src="../assets/plugins/datatable/js/buttons.bootstrap4.min.js"></script>
+ <script src="../assets/plugins/datatable/js/jszip.min.js"></script>
+ <script src="../assets/plugins/datatable/js/pdfmake.min.js"></script>
+ <script src="../assets/plugins/datatable/js/vfs_fonts.js"></script>
+ <script src="../assets/plugins/datatable/js/buttons.html5.min.js"></script>
+ <script src="../assets/plugins/datatable/js/buttons.print.min.js"></script>
+ <script src="../assets/plugins/datatable/js/buttons.colVis.min.js"></script>
+ <script src="../assets/plugins/datatable/js/dataTables.responsive.min.js"></script>
+ <script src="../assets/plugins/datatable/js/responsive.bootstrap4.min.js"></script>
+
+ <!--Internal  Datatable js -->
+ <script src="../assets/js/table-data.js"></script>
+ <script>
+    const sqlite = require('sqlite3').verbose();
+       let db2 = new sqlite.Database('./DBManager/okbills.db');
+       db2.all('SELECT * FROM add_filter',function(err, rows ) {
+       rows.forEach(function(row) {
+           $('#SlectBox').append(` <option value="2021"> ${row.filter}</option>`)
+           });
+       });   
+</script>

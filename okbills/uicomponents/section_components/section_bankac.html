@@ -1,0 +1,391 @@
+<!-- Internal Data table css -->
+<link href="../assets/plugins/datatable/css/dataTables.bootstrap4.min.css" rel="stylesheet" />
+<link href="../assets/plugins/datatable/css/buttons.bootstrap4.min.css" rel="stylesheet">
+<link href="../assets/plugins/datatable/css/responsive.bootstrap4.min.css" rel="stylesheet" />
+<link href="../assets/plugins/datatable/css/jquery.dataTables.min.css" rel="stylesheet">
+<link href="../assets/plugins/datatable/css/responsive.dataTables.min.css" rel="stylesheet">
+
+<div class="row">
+    <div class="col-sm-12">
+        <div class="card ">
+            <div class="card-body " >
+                <div class="counter-status d-flex md-mb-4">
+                    <div class="table-responsive border-top userlist-table">
+                        <table
+                            class="table card-table table-striped table-vcenter text-nowrap mb-0">
+                            <thead>
+                                <tr>
+                                    <th class="wd-lg-8p">
+                                        <span>Bank Name: <button aria-expanded="false"  style="position: absolute;top:20px; width: 150px; border-radius: 5px; left:1060px;" aria-haspopup="true" class="btn ripple btn-primary"
+                                            data-toggle="dropdown" id="dropdownMenuButton" type="button">Transfer Money<i class="fas fa-caret-down ml-1"></i></button>
+                                            <div  class="dropdown-menu tx-13">
+                                                <a class="dropdown-item"data-effect="effect-scale" data-toggle="modal" href="#modaldemo8" >Bank to Cash Transfer</a>
+                                                <a class="dropdown-item"data-effect="effect-scale" data-toggle="modal" href="#modaldemo9">Cash to Bank Transfer</a>
+                                                <a class="dropdown-item" data-effect="effect-scale" data-toggle="modal" href="#modaldemo10" >Bank to Bank Transfer</a>
+                                                <a class="dropdown-item" data-effect="effect-scale" data-toggle="modal" href="#modaldemo11" >Adjust Bank Balance</a>
+                                            </div>
+                                        </div></span>
+                                    </th>
+                                </tr>
+                                <tr>
+                                    <th class="wd-lg-8p">
+                                        <span>Account Number:</span>
+                                    </th>
+                                </tr>
+                             <tr>
+                                 <th class="wd-lg-20p">
+                                        <span>IFSC Code:</span>
+                                </th>
+                            </tr>
+                            <tr>
+                                <th class="wd-lg-20p">
+                                       <span>UPI Id:<i style="position: absolute; border-radius: 5px; left:1050px;"> Current balance:</i></span>  
+                               </th>
+                           </tr>
+                            </thead>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-sm-4">
+        <div class="card mg-b-20" >
+            <div class="card-body" style="min-height:720px;">
+                <div class="pl-0">
+                    <div class="main-profile-overview ">
+                        <div class="main-img-user profile-user d-block ml-auto mr-auto">
+                            <img alt="" src="../images/accounting-logo-design-260nw-604530587.webp"><a
+                                class="fas fa-camera profile-edit" href="JavaScript:void(0);"></a>
+                        </div>
+                        <!-- <div class="d-flex justify-content-between mg-b-20"> -->
+                        <div class="card-body pb-0">
+                            <div class="input-group mb-4">
+                                <span class="input-group-append">
+                                    <button class="btn ripple btn-warning" style="width: 320px; height: 40px; border-radius: 15px;" id="form"  type="button">Add Bank Account</button>
+                                </span>
+                            </div>
+                            <!-- button search -->
+                        </div>
+                        <!-- </div> -->
+                        <div class="input-group mb-4">
+                            <input type="text" class="form-control" placeholder="Searching.....">
+                            <span class="input-group-append">
+                                <button class="btn ripple btn-primary" type="button">Search</button>
+                            </span>
+                        </div>
+                        <div class="table-responsive">
+                            <table class="table table-striped mg-b-0 text-md-nowrap">
+                                <thead>
+                                    <tr>
+                                        <th class="col-md-8 col mb20">ACCOUNT NAME</th>
+                                        <th class="col-md-4 col mb20">AMOUNT</th>
+                                    </tr>
+                                </thead>
+                            </table>
+                        </div>
+                        <!--skill bar-->
+                    </div><!-- main-profile-overview -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-xl-8">
+        <div class="card mg-b-20" style="min-height:720px;">
+            <div class="card-header pb-0">
+                <div class="d-flex justify-content-between">
+                    <h4 class="card-title mg-b-0">TRANSACTIONS</h4>
+                    <i class="mdi mdi-dots-horizontal text-gray"></i>
+                </div>
+            </div>
+            <div class="card-body">
+                <div class="table-responsive">
+                    <table id="example" class="table key-buttons text-md-nowrap">
+                        <thead>
+                            <tr>
+                                <th class="border-bottom-0">TYPE</th>
+                                <th class="border-bottom-0">NAME</th>
+                                <th class="border-bottom-0">DATE</th>
+                                <th class="border-bottom-0">AMOUNT</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Tiger Nixon</td>
+                                <td>System Architect</td>
+                                <td>Edinburgh</td>
+                                <td>61</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal" id="modaldemo8">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content modal-content-demo">
+            <div class="modal-header">
+                <h6 class="modal-title">Bank To Cash Transfer</h6><button aria-label="Close" class="close" data-dismiss="modal" type="button"><span aria-hidden="true">&times;</span></button>
+            </div>
+            <div class="row">
+                <div class=" col-sm-12">
+                 <div class="card card-success">
+                    <div class="modal-body"> 
+                <div class="card-footer">
+                 <form >
+                    <div class="row">
+                            <div class="col-sm-6">
+                                <div class="mb-3">
+                                    <p class="mg-b-10">FROM</p>
+                                    <select class="SlectBox form-control" id="fromcash" required>
+                                        <option value="gst">GST</option>
+                                        <option value="vat">VAT</option>
+                                    </select>
+                                </div>
+                          </div>
+                            <div class="col-sm-6">
+                                <div class="mb-3">
+                                    <p class="mg-b-10">TO</p>
+                                    <select class="SlectBox form-control" id="tax" required>
+                                        <option value="gst">GST</option>
+                                        <option value="vat">VAT</option>
+                                    </select>
+                                </div>
+                             </div>
+                             <div class="col-sm-6">
+                                <div class="mb-3">
+                                    <p class="mg-b-10">AMOUNT</p>
+                                    <input class="form-control form-control-sm" id="amount" type="text" required> 
+                                </div>
+                             </div>
+                             <div class="col-sm-6">
+                                <div class="mb-3">
+                                    <p class="mg-b-10">ADJUSTMENT DATE</p>
+                                    <input class="form-control form-control-sm" id="adate" type="date" required> 
+                                </div>
+                             </div>
+                             <div class="col-sm-6">
+                                <div class="mb-3">
+                                    <p class="mg-b-10">Description</p>
+                                    <input class="form-control form-control-sm"  id="companyn" type="text" required> 
+                                </div>
+                             </div>
+                    </div>
+            </div>
+            <div class="modal-footer">
+                <button class="btn ripple btn-primary" onclick ="login();" type="button">Log in</button>
+                <button class="btn ripple btn-secondary" data-dismiss="modal" type="button">Close</button>
+            </div>
+        </div>
+    </div>
+  </div>
+</div>
+</div>
+</div>
+</div>
+<div class="modal" id="modaldemo9">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content modal-content-demo">
+            <div class="modal-header">
+                <h6 class="modal-title"> Cash To Bank Transfer</h6><button aria-label="Close" class="close" data-dismiss="modal" type="button"><span aria-hidden="true">&times;</span></button>
+            </div>
+            <div class="row">
+                <div class=" col-sm-12">
+                 <div class="card card-success">
+                    <div class="modal-body"> 
+                <div class="card-footer">
+                 <form >
+                    <div class="row">
+                            <div class="col-sm-6">
+                                <div class="mb-3">
+                                    <p class="mg-b-10">FROM</p>
+                                    <select class="SlectBox form-control" id="tax" required>
+                                        <option value="gst">GST</option>
+                                        <option value="vat">VAT</option>
+                                    </select>
+                                </div>
+                          </div>
+                            <div class="col-sm-6">
+                                <div class="mb-3">
+                                    <p class="mg-b-10">TO</p>
+                                    <select class="SlectBox form-control" id="tax" required>
+                                        <option value="gst">GST</option>
+                                        <option value="vat">VAT</option>
+                                    </select>
+                                </div>
+                             </div>
+                             <div class="col-sm-6">
+                                <div class="mb-3">
+                                    <p class="mg-b-10">AMOUNT</p>
+                                    <input class="form-control form-control-sm" id="amount" type="text" required> 
+                                </div>
+                             </div>
+                             <div class="col-sm-6">
+                                <div class="mb-3">
+                                    <p class="mg-b-10">ADJUSTMENT DATE</p>
+                                    <input class="form-control form-control-sm" id="adate" type="date" required> 
+                                </div>
+                             </div>
+                             <div class="col-sm-6">
+                                <div class="mb-3">
+                                    <p class="mg-b-10">Description</p>
+                                    <input class="form-control form-control-sm"  id="companyn" type="text" required> 
+                                </div>
+                             </div>
+                    </div>
+
+            </div>
+            <div class="modal-footer">
+                <button class="btn ripple btn-primary" onclick ="login();" type="button">Log in</button>
+                <button class="btn ripple btn-secondary" data-dismiss="modal" type="button">Close</button>
+            </div>
+        </div>
+    </div>
+  </div>
+</div>
+</div>
+</div>
+</div>
+<div class="modal" id="modaldemo10">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content modal-content-demo">
+            <div class="modal-header">
+                <h6 class="modal-title">Bank To Bank Transfer</h6><button aria-label="Close" class="close" data-dismiss="modal" type="button"><span aria-hidden="true">&times;</span></button>
+            </div>
+            <div class="row">
+                <div class=" col-sm-12">
+                 <div class="card card-success">
+                    <div class="modal-body"> 
+                <div class="card-footer">
+                 <form >
+                    <div class="row">
+                            <div class="col-sm-6">
+                                <div class="mb-3">
+                                    <p class="mg-b-10">FROM</p>
+                                    <select class="SlectBox form-control" id="tax" required>
+                                        <option value="gst">GST</option>
+                                        <option value="vat">VAT</option>
+                                    </select>
+                                </div>
+                          </div>
+                            <div class="col-sm-6">
+                                <div class="mb-3">
+                                    <p class="mg-b-10">TO</p>
+                                    <select class="SlectBox form-control" id="tax" required>
+                                        <option value="gst">GST</option>
+                                        <option value="vat">VAT</option>
+                                    </select>
+                                </div>
+                             </div>
+                             <div class="col-sm-6">
+                                <div class="mb-3">
+                                    <p class="mg-b-10">AMOUNT</p>
+                                    <input class="form-control form-control-sm" id="amount" type="text" required> 
+                                </div>
+                             </div>
+                             <div class="col-sm-6">
+                                <div class="mb-3">
+                                    <p class="mg-b-10">ADJUSTMENT DATE</p>
+                                    <input class="form-control form-control-sm" id="adate" type="date" required> 
+                                </div>
+                             </div>
+                             <div class="col-sm-6">
+                                <div class="mb-3">
+                                    <p class="mg-b-10">Description</p>
+                                    <input class="form-control form-control-sm"  id="companyn" type="text" required> 
+                                </div>
+                             </div>
+                    </div>
+            </div>
+            <div class="modal-footer">
+                <button class="btn ripple btn-primary" onclick ="login();" type="button">Log in</button>
+                <button class="btn ripple btn-secondary" data-dismiss="modal" type="button">Close</button>
+            </div>
+        </div>
+    </div>
+  </div>
+</div>
+</div>
+</div>
+</div>
+<div class="modal" id="modaldemo11">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content modal-content-demo">
+            <div class="modal-header">
+                <h6 class="modal-title">Adjust Bank Balance</h6><button aria-label="Close" class="close" data-dismiss="modal" type="button"><span aria-hidden="true">&times;</span></button>
+            </div>
+            <div class="row">
+                <div class=" col-sm-12">
+                 <div class="card card-success">
+                    <div class="modal-body"> 
+                <div class="card-footer">
+                 <form >
+                    <div class="row">
+                            <div class="col-sm-6">
+                                <div class="mb-3">
+                                    <p class="mg-b-10">FROM</p>
+                                    <input class="form-control form-control-sm" id="fromcash" type="text" required> 
+                                </div>
+                          </div>
+                            <div class="col-sm-6">
+                                <div class="mb-3">
+                                    <p class="mg-b-10">TO</p>
+                                    <input class="form-control form-control-sm" id="tocash" type="text" required> 
+                                </div>
+                             </div>
+                             <div class="col-sm-6">
+                                <div class="mb-3">
+                                    <p class="mg-b-10">AMOUNT</p>
+                                    <input class="form-control form-control-sm" id="amount" type="text" required> 
+                                </div>
+                             </div>
+                             <div class="col-sm-6">
+                                <div class="mb-3">
+                                    <p class="mg-b-10">ADJUSTMENT DATE</p>
+                                    <input class="form-control form-control-sm" id="adate" type="date" required> 
+                                </div>
+                             </div>
+                             <div class="col-sm-6">
+                                <div class="mb-3">
+                                    <p class="mg-b-10">Description</p>
+                                    <input class="form-control form-control-sm"  id="companyn" type="text" required> 
+                                </div>
+                             </div>
+                    </div>
+              
+            </div>
+            <div class="modal-footer">
+                <button class="btn ripple btn-primary" onclick ="login();" type="button">Log in</button>
+                <button class="btn ripple btn-secondary" data-dismiss="modal" type="button">Close</button>
+            </div>
+        </div>
+    </div>
+  </div>
+</div>
+</div>
+</div>
+</div>
+ <!-- Internal Data tables -->
+ <script src="../assets/plugins/datatable/js/jquery.dataTables.min.js"></script>
+ <script src="../assets/plugins/datatable/js/dataTables.dataTables.min.js"></script>
+ <script src="../assets/plugins/datatable/js/dataTables.responsive.min.js"></script>
+ <script src="../assets/plugins/datatable/js/responsive.dataTables.min.js"></script>
+ <script src="../assets/plugins/datatable/js/jquery.dataTables.js"></script>
+ <script src="../assets/plugins/datatable/js/dataTables.bootstrap4.js"></script>
+ <script src="../assets/plugins/datatable/js/dataTables.buttons.min.js"></script>
+ <script src="../assets/plugins/datatable/js/buttons.bootstrap4.min.js"></script>
+ <script src="../assets/plugins/datatable/js/jszip.min.js"></script>
+ <script src="../assets/plugins/datatable/js/pdfmake.min.js"></script>
+ <script src="../assets/plugins/datatable/js/vfs_fonts.js"></script>
+ <script src="../assets/plugins/datatable/js/buttons.html5.min.js"></script>
+ <script src="../assets/plugins/datatable/js/buttons.print.min.js"></script>
+ <script src="../assets/plugins/datatable/js/buttons.colVis.min.js"></script>
+ <script src="../assets/plugins/datatable/js/dataTables.responsive.min.js"></script>
+ <script src="../assets/plugins/datatable/js/responsive.bootstrap4.min.js"></script>
+<!--Internal  Datatable js -->
+<script src="../assets/js/table-data.js"></script>

@@ -1,0 +1,911 @@
+<!-- Internal Data table css -->
+<link href="../assets/plugins/datatable/css/dataTables.bootstrap4.min.css" rel="stylesheet" />
+<link href="../assets/plugins/datatable/css/buttons.bootstrap4.min.css" rel="stylesheet">
+<link href="../assets/plugins/datatable/css/responsive.bootstrap4.min.css" rel="stylesheet" />
+<link href="../assets/plugins/datatable/css/jquery.dataTables.min.css" rel="stylesheet">
+<link href="../assets/plugins/datatable/css/responsive.dataTables.min.css" rel="stylesheet">
+
+<!---Internal Fileupload css-->
+<link href="../assets/plugins/fileuploads/css/fileupload.css" rel="stylesheet" type="text/css">
+
+<!---Internal Fancy uploader css-->
+<link href="../assets/plugins/fancyuploder/fancy_fileupload.css" rel="stylesheet" />
+
+<div class="panel panel-primary tabs-style-2 ">
+    <div class=" tab-menu-heading ">
+        <div class="tabs-menu1">
+            <!-- Tabs -->
+            <ul class="nav panel-tabs main-nav-line">
+                <li><a href="#tab4" class="nav-link active " data-toggle="tab">PRODUCTS</a></li>
+                <li><a href="#tab5" class="nav-link " data-toggle="tab">SERVICES</a></li>
+                <li><a href="#tab6" class="nav-link " data-toggle="tab">UNITS</a></li>
+                <li><a href="#tab7" class="nav-link " data-toggle="tab">MY ONLINE STORE</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="panel-body tabs-menu-body main-content-body-right border">
+        <div class="tab-content">
+            <div class="tab-pane active" id="tab4">
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <div class="card ">
+                                <div class="card-body " >
+                                    <div class="counter-status d-flex md-mb-4">
+                                        <div class="table-responsive border-top userlist-table">
+                                            <table
+                                                class="table card-table table-striped table-vcenter text-nowrap mb-0">
+                                                <thead>
+                                                    <tr>
+                                                        <th class="wd-lg-8p">
+                                                            <span>NAME:</span>
+                                                        </th>
+                                                    </tr>
+                                                    <tr>
+                                                        <th class="wd-lg-8p">
+                                                            <span>SALE PRICE:</span>
+                                                        </th>
+                                                    </tr>
+                                                    <tr>
+                                                        <th class="wd-lg-20p">
+                                                            <span>PURCHASE PRICE:</span>
+                                                        </th>
+                                                    </tr>
+                                                </thead>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="card ">
+                                <div class="card-body " >
+                                    <div class="counter-status d-flex md-mb-4">
+                                        <div class="table-responsive border-top userlist-table">
+                                            <table class="table card-table table-striped table-vcenter text-nowrap mb-0">
+                                                <thead>
+                                                    <tr>
+                                                        <th>
+                                                            <button class="btn btn-primary"  data-effect="effect-newspaper" data-toggle="modal" href="#modaldemo9"style="width: 150px;"> ADJUST ITEM</button>
+                                                        </th>
+                                                    </tr>
+                                                    <tr>
+                                                        <th class="wd-lg-8p">
+                                                            <span>STOCK QUANTITY:</span>
+                                                        </th>
+                                                    </tr>
+                                                    <tr>
+                                                        <th class="wd-lg-20p">
+                                                            <span>STOCK VALUE:</span>
+                                                        </th>
+                                                </thead>
+                                            </table>
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <div class="card mg-b-20" >
+                                <div class="card-body" style="min-height:720px;">
+                                    <div class="pl-0">
+                                        <div class="main-profile-overview ">
+                                            <div class="main-img-user profile-user" style=" display: block;
+                                            margin-left: auto;
+                                            margin-right: auto;
+                                            width: 35%;">
+                                                <img alt="" src="../images/accounting-logo-design-260nw-604530587.webp"><a
+                                                    class="fas fa-camera profile-edit" href="JavaScript:void(0);"></a>
+                                            </div>
+                                            <!-- <div class="d-flex justify-content-between mg-b-20"> -->
+                                            <div class="card-body pb-0">
+                                                <div class="input-group mb-4">
+                                                    <span class="input-group-append">
+                                                        <button class="btn ripple btn-warning" style="width: 320px; height: 40px; border-radius: 15px;" id="form"  type="button" data-target="#modaldemo3" data-toggle="modal" href="" onclick="additems();">Add ITEMS </button>
+                                                    </span>
+                                                </div>
+                                                <div class="input-group mb-4">
+                                                    <input type="text" class="form-control" placeholder="Searching.....">
+                                                    <span class="input-group-append">
+                                                        <button class="btn ripple btn-primary" type="button">Search</button>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                            <!-- </div> -->
+                                            <div class="table-responsive">
+                                                <table class="table table-striped mg-b-0 text-md-nowrap">
+                                                    <thead>
+                                                        <tr>
+                                                            <th class="col-md-8 col mb20">ITEM</th>
+                                                            <th class="col-md-4 col mb20">QUANTITY</th>
+                                                        </tr>
+                                                    </thead>
+                                                </table>
+                                            </div>
+                                            <!--skill bar-->
+                                        </div><!-- main-profile-overview -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-xl-8">
+                            <div class="card mg-b-20" style="min-height:720px;">
+                                <div class="card-header pb-0">
+                                    <div class="d-flex justify-content-between">
+                                        <h4 class="card-title mg-b-0">Bordered Table</h4>
+                                        <i class="mdi mdi-dots-horizontal text-gray"></i>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <div class="table-responsive" style="width: 100%;">
+                                        <table width="100%" class="table text-md-nowrap" id="example">
+                                            <thead>
+                                                <tr>
+                                                    <th class="wd-15p border-bottom-0">ID</th>
+                                                    <th class="wd-15p border-bottom-0">TYPE</th>
+                                                    <th class="wd-20p border-bottom-0">NAME</th>
+                                                    <th class="wd-15p border-bottom-0">DATE</th>
+                                                    <th class="wd-10p border-bottom-0">QUANTITY</th>
+                                                    <th class="wd-25p border-bottom-0">PRICE/UNIT</th>
+                                                    <th class="wd-25p border-bottom-0">STATUS</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody id="itemsdata">
+                                               
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div> 
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /breadcrumb -->
+            </div>
+            <div class="tab-pane" id="tab5">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <div class="card">
+                                <div class="card-body " >
+                                    <div class="counter-status d-flex md-mb-4">
+                                        <div class="table-responsive border-top userlist-table">
+                                            <table
+                                                class="table card-table table-striped table-vcenter text-nowrap mb-0">
+                                                <thead>
+                                                    <tr>
+                                                        <th class="wd-lg-8p">
+                                                            <span>NAME:</span>
+                                                        </th>
+                                                    </tr>
+                                                    <tr>
+                                                        <th class="wd-lg-8p">
+                                                            <span>SALE PRICE :</span>
+                                                        </th>
+                                                    </tr>
+                                                </thead>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <div class="card mg-b-20" >
+                                <div class="card-body" style="min-height:720px;">
+                                    <div class="pl-0">
+                                        <div class="main-profile-overview ">
+                                            <div class="main-img-user profile-user" style=" display: block;
+                                            margin-left: auto;
+                                            margin-right: auto;
+                                            width: 35%;">
+                                                <img alt="" src="../images/accounting-logo-design-260nw-604530587.webp"><a
+                                                    class="fas fa-camera profile-edit" href="JavaScript:void(0);"></a>
+                                            </div>
+                                            <!-- <div class="d-flex justify-content-between mg-b-20"> -->
+                                            <div class="card-body pb-0">
+                                                <div class="input-group mb-4">
+                                                    <span class="input-group-append">
+                                                        <button class="btn ripple btn-warning" style="width: 320px; height: 40px; border-radius: 15px;" data-target="#modaldemo4" data-toggle="modal" href="" id="form"  type="button">Add Services</button>
+                                                    </span>
+                                                </div>
+                                                <div class="input-group mb-4">
+                                                    <input type="text" class="form-control" placeholder="Searching.....">
+                                                    <span class="input-group-append">
+                                                        <button class="btn ripple btn-primary" type="button">Search</button>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                            <!-- </div> -->
+                                            <div class="table-responsive">
+                                                <table class="table table-striped mg-b-0 text-md-nowrap">
+                                                    <thead>
+                                                        <tr>
+                                                            <th class="col-md-8 col mb20">ITEMS</th>
+                                                        </tr>
+                                                    </thead>
+                                                </table>
+                                            </div>
+                                            <!--skill bar-->
+                                        </div><!-- main-profile-overview -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                      <!-- tabel -->
+                      <div class="col-xl-8">
+                        <div class=" card"  style="min-height:720px;">
+                            <div class="card-header pb-0">
+                                <div class="d-flex justify-content-between">
+                                    <h4 class="card-title mg-b-0">TRANSACTIONS</h4>
+                                    <i class="mdi mdi-dots-horizontal text-gray"></i>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <div class="table-responsive" style="width: 100%;">
+                                    <table width="100%" class="table text-md-nowrap" id="example1">
+                                        <thead>
+                                            <tr>
+                                                <th class="wd-15p border-bottom-0">ID</th>
+                                                <th class="wd-15p border-bottom-0">TYPE</th>
+                                                <th class="wd-20p border-bottom-0">NAME</th>
+                                                <th class="wd-15p border-bottom-0">DATE</th>
+                                                <th class="wd-10p border-bottom-0">QUANTITY</th>
+                                                <th class="wd-25p border-bottom-0">PRICE/UNIT</th>
+                                                <th class="wd-25p border-bottom-0">STATUS</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>Bella</td>
+                                                <td>Chloe</td>
+                                                <td>System Developer</td>
+                                                <td>2018/03/12</td>
+                                                <td>$654,765</td>
+                                                <td>b.Chloe@datatables.net</td>
+                                                <td>System Developer</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                 </div>
+                    <!-- /breadcrumb -->
+                <!-- row closed -->
+            </div>
+            <div class="tab-pane" id="tab6">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <div class="card ">
+                                <div class="card-body " >
+                                    <div class="counter-status d-flex md-mb-4">
+                                        <div class="table-responsive border-top userlist-table">
+                                            <table
+                                                class="table card-table table-striped table-vcenter text-nowrap mb-0">
+                                                <thead>
+                                                    <tr>
+                                                        <th class="wd-lg-8p">
+                                                            <span>BAGS</span>
+                                                        </th>
+                                                    </tr>
+                                                    <tr>
+                                                        <th class="wd-lg-8p">
+                                                            <span>  <button class="btn btn-primary" id="addconversion"  data-target="#modaldemo6" data-toggle="modal" href="" 
+                                                            style="width: 150px;" >Add Converstion</button></span>
+                                                        </th>
+                                                    </tr>
+                                                </thead>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <div class="card mg-b-20" >
+                                <div class="card-body" style="min-height:720px;">
+                                    <div class="pl-0">
+                                        <div class="main-profile-overview ">
+                                            <div class="main-img-user profile-user" style=" display: block;
+                                            margin-left: auto;
+                                            margin-right: auto;
+                                            width: 35%;">
+                                                <img alt="" src="../images/accounting-logo-design-260nw-604530587.webp"><a
+                                                    class="fas fa-camera profile-edit" href="JavaScript:void(0);"></a>
+                                            </div>
+                                            <!-- <div class="d-flex justify-content-between mg-b-20"> -->
+                                            <div class="card-body pb-0">
+                                                <div class="input-group mb-4">
+                                                    <span class="input-group-append">
+                                                        <button class="btn ripple btn-warning" style="width: 320px; height: 40px; border-radius: 15px;" id="form"  data-target="#modaldemo5" data-toggle="modal" href="" type="button">Add Unit</button>
+                                                    </span>
+                                                </div>
+                                                <div class="input-group mb-4">
+                                                    <input type="text" class="form-control" placeholder="Searching.....">
+                                                    <span class="input-group-append">
+                                                        <button class="btn ripple btn-primary" type="button">Search</button>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                            <!-- </div> -->
+                                            <div class="table-responsive">
+                                                <table class="table table-striped mg-b-0 text-md-nowrap">
+                                                    <thead>
+                                                        <tr>
+                                                            <th class="col-md-8 col mb20">FULL NAME</th>
+                                                            <th class="col-md-4 col mb20">SHORTNAME</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody id="unitdata">
+
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                            <!--skill bar-->
+                                        </div><!-- main-profile-overview -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-8">
+                            <div class="card" style="min-height:720px;">
+                                <div class="card-header pb-0">
+                                    <div class="d-flex justify-content-between">
+                                        <h4 class="card-title mg-b-0">TRANSACTIONS</h4>
+                                        <i class="mdi mdi-dots-horizontal text-gray"></i>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <div class="table-responsive">
+                                        <table width="100%"class="table text-md-nowrap" id="example2">
+                                            <thead>
+                                                <tr>
+                                                    <th class="wd-15p border-bottom-0">id</th>
+                                                    <th class="wd-15p border-bottom-0">CONVERSACTION</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>Bella</td>
+                                                    <td>Chloe</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /breadcrumb -->
+            </div>
+            <div class="tab-pane" id="tab7">
+                <div class="carousel-inner" style=" display: block;
+                margin-left: auto;
+                margin-right: auto;
+                   width: 35%;">
+                   <div class="carousel-item active">
+                       <img class="d-block w-60 p-4"src="../images/">
+                       <div class="carousel-caption">
+                         <h5></h5>
+                       </div>
+                       <button class="btn btn-info " onclick="parties();">Add your first party</button>
+                   </div>
+               </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal" id="modaldemo3">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content modal-content-demo">
+            <div class="modal-header">
+                <h6 class="modal-title">ADD ITEMS</h6><button aria-label="Close" class="close" data-dismiss="modal" type="button"><span aria-hidden="true">&times;</span></button>
+            </div>
+            <div class="modal-body" style="height: 675px;">
+                <div class="row">
+                    <div class=" col-sm-12">
+                        <div class="card card-primary">
+                          <div class="card-header pb-0">
+                            <h5 class="mb-10 pb-0" >
+                                Add New Items
+                            </h5>
+                            <div class="alert alert-solid-danger mg-b-10" id="Fields" role="alert">
+                                <button aria-label="Close" class="close" data-dismiss="alert" type="button">
+                               <span aria-hidden="true">&times;</span></button>
+                                 <strong> All fileds are require...</strong> 
+                            </div>
+                          </div> 
+                          <div class="card-footer">
+                              <form>
+                                  <div class="row">
+                                      <div class="col-sm-6">
+                                          <div class="mb-3">
+                                              <p class="mg-b-10">ITEM NAME</p>
+                                              <input class="form-control form-control-sm" type="text" id="itemname">
+                                          </div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <div class="mb-3">
+                                            <p class="mg-b-10">ITEM HSN/SAC</p>
+                                            <input class="form-control form-control-sm" type="text" id="itemhsc">
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <div class="mb-3">
+                                            <p class="mg-b-10">ITEM CODE</p>
+                                            <input class="form-control form-control-sm" type="text" id="itemcode">
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <div class="mb-3">
+                                            <p class="mg-b-10">UNIT</p>
+                                          <button class="btn btn-primary"  data-effect="effect-scale" data-toggle="modal" href="#modaldemo8" id="addunit" type="button">SELECT UNIT</button>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <div class="mb-3">
+                                            <p class="mg-b-10">SALE PRICE</p>
+                                            <input class="form-control form-control-sm" type="text" id="saleprice">
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <div class="mb-3">
+                                            <p class="mg-b-10">TAX TYPE</p>
+                                            <select class="SlectBox form-control" id="stax">
+                                                <option value="tax">With tax</option>
+                                                <option value="withouttax">Without tax</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <div class="mb-3">
+                                            <p class="mg-b-10">PURCHASE PRICE</p>
+                                            <input class="form-control form-control-sm" type="text" id="purchaseprice">
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <div class="mb-3">
+                                            <p class="mg-b-10">TAX TYPE</p>
+                                            <select class="SlectBox form-control" id="ptax">
+                                                <option value="With">With tax</option>
+                                                <option value="without">Without tax</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <div class="mb-3">
+                                            <p class="mg-b-10">ITEM LOCATION</p>
+                                            <input class="form-control form-control-sm" type="text" id="itemloc">
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <div class="mb-3">
+                                            <p class="mg-b-10">OPENING STOCK</p>
+                                            <input class="form-control form-control-sm" type="text" id="openings">
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <div class="mb-3">
+                                            <p class="mg-b-10">AT PRICE UNIT</p>
+                                            <input class="form-control form-control-sm" type="text" id="priceunit">
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <div class="mb-3">
+                                            <p class="mg-b-10">MIN STOCK QTY</p>
+                                            <input class="form-control form-control-sm" type="text" id="minstock">
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <div class="mb-3">
+                                            <p class="mg-b-10">SELECT TAX RATE</p>
+                                            <select class="SlectBox form-control" id="taxrate">
+                                                <option value="mercedes">Mercedes</option>
+                                                <option value="audi">Audi</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <div class="mb-3">
+                                            <p class="mg-b-10">DATE</p>
+                                            <div class="input-group ">
+                                                <div class="input-group-prepend">
+                                                    <div class="input-group-text">
+                                                        <i class="typcn typcn-calendar-outline tx-24 lh--9 op-6"></i>
+                                                    </div>
+                                                </div><input class="form-control fc-datepicker" id="cdate" placeholder="MM/DD/YYYY" type="date">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-2">
+                                        <div class="mb-3">
+                                            <p class="mg-b-10">ATTACH IMAGE</p>
+                                            <input type="file" class="dropify" data-height="50" id="image" />
+                                        </div>
+                                    </div> 
+                                  </div>
+                              </form>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button class="btn ripple btn-primary" type="button" onclick="additems()">Save </button>
+                <button class="btn ripple btn-outline-primary" type="button">Save & New</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal" id="modaldemo8">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content modal-content-demo">
+            <div class="modal-header">
+                <h6 class="modal-title">Select Unit</h6><button aria-label="Close" class="close" data-dismiss="modal" type="button"><span aria-hidden="true">&times;</span></button>
+            </div>
+            <div class="row">
+                <div class=" col-sm-12">
+                 <div class="card card-primary">
+                    <div class="modal-body" style="height: 180px;"> 
+                <div class="card-footer">
+                 <form >
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <div class="mb-3">
+                                <p class="mg-b-10">Basic unit</p>
+                                <select class="SlectBox form-control" id="basicunit">
+                                    <option value="None">None</option>
+                                    <option value="mercedes">Mercedes</option>
+                                    <option value="audi">Audi</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="mb-3">
+                                <p class="mg-b-10">Secondery unit</p>
+                                <select class="SlectBox form-control" id="seconderyunit">
+                                    <option value="None">None</option>
+                                    <option value="mercedes">Mercedes</option>
+                                    <option value="audi">Audi</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+            <div class="modal-footer">
+                <button class="btn ripple btn-primary" onclick ="unit()" type="button">Save</button>
+            </div>
+        </div>
+    </div>
+  </div>
+</div>
+</div>
+</div>
+</div>
+<div class="modal" id="modaldemo9">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content modal-content-demo">
+            <div class="modal-header">
+                <h6 class="modal-title">Adjust Items</h6><button aria-label="Close" class="close" data-dismiss="modal" type="button"><span aria-hidden="true">&times;</span></button>
+            </div>
+            <div class="alert alert-outline-danger mg-b-0" id="alert" role="alert">
+                <button aria-label="Close" class="close" data-dismiss="alert" type="button">
+                <span aria-hidden="true">&times;</span></button>
+                <strong>!</strong> All fields are required.......
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="mb-3">
+                            <p class="mg-b-10">ITEM NAME</p>
+                            <input class="form-control form-control-sm" type="text" id="openings">
+                        </div>
+                    </div>
+                    <div class="col-sm-12">
+                        <div class="mb-3">
+                            <p class="mg-b-10">ADJUSTMENT TYPE</p>
+                            <select class="SlectBox form-control" id="seconderyunit">
+                                <option value="Add Stock">Add Stock</option>
+                                <option value="Reduce Stock">Reduce Stock</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="mb-3">
+                            <p class="mg-b-10">QUANTITY</p>
+                            <input class="form-control form-control-sm" type="text" id="openings" required>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="mb-3">
+                            <p class="mg-b-10">AT PRICE</p>
+                            <input class="form-control form-control-sm" type="text" id="openings" required>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="mb-3">
+                            <p class="mg-b-10">ADJUSTMENT DATE</p>
+                            <input class="form-control form-control-sm" type="date" id="openings" required>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="mb-3">
+                            <p class="mg-b-10">DETAILS</p>
+                            <input class="form-control form-control-sm" type="text" id="openings" required>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button class="btn ripple btn-primary" type="button" onclick="adjust_item();">Save</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal" id="modaldemo4">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content modal-content-demo">
+            <div class="modal-header">
+                <h6 class="modal-title">ADD ITEMS</h6><button aria-label="Close" class="close" data-dismiss="modal" type="button"><span aria-hidden="true">&times;</span></button>
+            </div>
+            <div class="modal-body" >
+                <div class="row">
+                    <div class=" col-sm-12">
+                        <div class="card card-primary">
+                          <div class="card-header pb-0">
+                            <h5 class="mb-10 pb-0" >
+                                Add New Items
+                            </h5>
+                            <div class="alert alert-solid-danger mg-b-10" id="Fields" role="alert">
+                                <button aria-label="Close" class="close" data-dismiss="alert" type="button">
+                               <span aria-hidden="true">&times;</span></button>
+                                 <strong> All fileds are require...</strong> 
+                            </div>
+                          </div> 
+                          <div class="card-footer">
+                              <form>
+                                  <div class="row">
+                                      <div class="col-sm-6">
+                                          <div class="mb-3">
+                                              <p class="mg-b-10">SERVICES NAME</p>
+                                              <input class="form-control form-control-sm" type="text" id="itemname">
+                                          </div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <div class="mb-3">
+                                            <p class="mg-b-10">SERVICES HSN/SAC</p>
+                                            <input class="form-control form-control-sm" type="text" id="itemhsc">
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <div class="mb-3">
+                                            <p class="mg-b-10">SERVICES CODE</p>
+                                            <input class="form-control form-control-sm" type="text" id="itemcode">
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <div class="mb-3">
+                                            <p class="mg-b-10"> UNIT</p>
+                                          <button class="btn btn-primary"  data-effect="effect-scale" data-toggle="modal" href="#modaldemo10" id="addunit" type="button">SELECT UNIT</button>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <div class="mb-3">
+                                            <p class="mg-b-10">SALE PRICE</p>
+                                            <input class="form-control form-control-sm" type="text" id="saleprice">
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <div class="mb-3">
+                                            <p class="mg-b-10">TAX TYPE</p>
+                                            <select class="SlectBox form-control" id="stax">
+                                                <option value="tax">With tax</option>
+                                                <option value="withouttax">Without tax</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-12">
+                                        <div class="mb-3">
+                                            <p class="mg-b-10">SELECT TAX RATE</p>
+                                            <select class="SlectBox form-control" id="taxrate">
+                                                <option value="mercedes">Mercedes</option>
+                                                <option value="audi">Audi</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-2">
+                                        <div class="mb-3">
+                                            <p class="mg-b-10">ATTACH IMAGE</p>
+                                            <input type="file" class="dropify" data-height="100" id="image" />
+                                        </div>
+                                    </div> 
+                                  </div>
+                              </form>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button class="btn ripple btn-primary" type="button" onclick="additems()">Save </button>
+                <button class="btn ripple btn-outline-primary" type="button">Save & New</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal" id="modaldemo10">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content modal-content-demo">
+            <div class="modal-header">
+                <h6 class="modal-title">Select Unit</h6><button aria-label="Close" class="close" data-dismiss="modal" type="button"><span aria-hidden="true">&times;</span></button>
+            </div>
+            <div class="row">
+                <div class=" col-sm-12">
+                 <div class="card card-primary">
+                    <div class="modal-body" style="height: 180px;"> 
+                <div class="card-footer">
+                 <form >
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <div class="mb-3">
+                                <p class="mg-b-10">Basic unit</p>
+                                <select class="SlectBox form-control" id="basicunit">
+                                    <option value="None">None</option>
+                                    <option value="mercedes">Mercedes</option>
+                                    <option value="audi">Audi</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="mb-3">
+                                <p class="mg-b-10">Secondery unit</p>
+                                <select class="SlectBox form-control" id="seconderyunit">
+                                    <option value="None">None</option>
+                                    <option value="mercedes">Mercedes</option>
+                                    <option value="audi">Audi</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+            <div class="modal-footer">
+                <button class="btn ripple btn-primary" onclick ="unit()" type="button">Save</button>
+            </div>
+        </div>
+    </div>
+  </div>
+</div>
+</div>
+</div>
+</div>
+<div class="modal" id="modaldemo5">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content modal-content-demo">
+            <div class="modal-header">
+                <h6 class="modal-title"> NEW UNIT</h6><button aria-label="Close" class="close" data-dismiss="modal" type="button"><span aria-hidden="true">&times;</span></button>
+            </div>
+            <div class="modal-body" >
+                <div class="row">
+                    <div class=" col-sm-12">
+                        <div class="card card-primary">
+                          <div class="card-header pb-0">
+                            <h5 class="mb-10 pb-0" >
+                            </h5>
+                          </div> 
+                          <div class="card-footer">
+                              <form>
+                                 <div class="row">
+                                    <div class="col-sm-8">
+                                        <div class="mb-3">
+                                            <p class="mg-b-10">UNIT NAME</p>
+                                            <input class="form-control form-control-sm" type="text" id="itemname">
+                                        </div>
+                                  </div>
+                                  <div class="col-sm-4">
+                                    <div class="mb-3">
+                                        <p class="mg-b-10">SHORT NAME</p>
+                                        <input class="form-control form-control-sm" type="text" id="itemname">
+                                    </div>
+                              </div>
+                                 </div>
+                              </form>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button class="btn ripple btn-primary" type="button" onclick="additems()">Save </button>
+                <button class="btn ripple btn-outline-primary" type="button">Save & New</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal" id="modaldemo6">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content modal-content-demo">
+            <div class="modal-header">
+                <h6 class="modal-title"> NEW UNIT</h6><button aria-label="Close" class="close" data-dismiss="modal" type="button"><span aria-hidden="true">&times;</span></button>
+            </div>
+            <div class="modal-body" >
+                <div class="row">
+                    <div class=" col-sm-12">
+                        <div class="card card-primary">
+                          <div class="card-header pb-0">
+                            <h5 class="mb-10 pb-0" >
+                            </h5>
+                          </div> 
+                          <div class="card-footer">
+                              <form>
+                                 <div class="row">
+                                    <div class="col-sm-8">
+                                        <div class="mb-3">
+                                            <p class="mg-b-10">UNIT NAME</p>
+                                            <input class="form-control form-control-sm" type="text" id="itemname">
+                                        </div>
+                                  </div>
+                                  <div class="col-sm-4">
+                                    <div class="mb-3">
+                                        <p class="mg-b-10">SHORT NAME</p>
+                                        <input class="form-control form-control-sm" type="text" id="itemname">
+                                    </div>
+                              </div>
+                                 </div>
+                              </form>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button class="btn ripple btn-primary" type="button" onclick="additems()">Save </button>
+                <button class="btn ripple btn-outline-primary" type="button">Save & New</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!--Internal Fileuploads js-->
+<script src="../assets/plugins/fileuploads/js/fileupload.js"></script>
+<script src="../assets/plugins/fileuploads/js/file-upload.js"></script>
+
+<!--Internal Fancy uploader js-->
+<script src="../assets/plugins/fancyuploder/jquery.ui.widget.js"></script>
+<script src="../assets/plugins/fancyuploder/jquery.fileupload.js"></script>
+<script src="../assets/plugins/fancyuploder/jquery.iframe-transport.js"></script>
+<script src="../assets/plugins/fancyuploder/jquery.fancy-fileupload.js"></script>
+<script src="../assets/plugins/fancyuploder/fancy-uploader.js"></script>
+
+ <!-- Internal Data tables -->
+ <script src="../assets/plugins/datatable/js/jquery.dataTables.min.js"></script>
+ <script src="../assets/plugins/datatable/js/dataTables.dataTables.min.js"></script>
+ <script src="../assets/plugins/datatable/js/dataTables.responsive.min.js"></script>
+ <script src="../assets/plugins/datatable/js/responsive.dataTables.min.js"></script>
+ <script src="../assets/plugins/datatable/js/jquery.dataTables.js"></script>
+ <script src="../assets/plugins/datatable/js/dataTables.bootstrap4.js"></script>
+ <script src="../assets/plugins/datatable/js/dataTables.buttons.min.js"></script>
+ <script src="../assets/plugins/datatable/js/buttons.bootstrap4.min.js"></script>
+ <script src="../assets/plugins/datatable/js/jszip.min.js"></script>
+ <script src="../assets/plugins/datatable/js/pdfmake.min.js"></script>
+ <script src="../assets/plugins/datatable/js/vfs_fonts.js"></script>
+ <script src="../assets/plugins/datatable/js/buttons.html5.min.js"></script>
+ <script src="../assets/plugins/datatable/js/buttons.print.min.js"></script>
+ <script src="../assets/plugins/datatable/js/buttons.colVis.min.js"></script>
+ <script src="../assets/plugins/datatable/js/dataTables.responsive.min.js"></script>
+ <script src="../assets/plugins/datatable/js/responsive.bootstrap4.min.js"></script>
+
+ <!--Internal  Datatable js -->
+ <script src="../assets/js/table-data.js"></script>
+
+ <script src="../jsfiles/add_items.js"></script>
+ <script>
+  
+   
+</script>

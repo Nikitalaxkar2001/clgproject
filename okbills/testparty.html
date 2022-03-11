@@ -1,0 +1,310 @@
+ <!-- Internal Data table css -->
+ <link href="../assets/plugins/datatable/css/dataTables.bootstrap4.min.css" rel="stylesheet" />
+ <link href="../assets/plugins/datatable/css/buttons.bootstrap4.min.css" rel="stylesheet">
+ <link href="../assets/plugins/datatable/css/responsive.bootstrap4.min.css" rel="stylesheet" />
+ <link href="../assets/plugins/datatable/css/jquery.dataTables.min.css" rel="stylesheet">
+ <link href="../assets/plugins/datatable/css/responsive.dataTables.min.css" rel="stylesheet">
+<div class="container-fluid my-4">
+    <div class="row row-sm">
+        <div class="col-xl-4 col-lg-6 col-sm-6 col-md-6">
+            <div class="card text-center">
+                <div class="card-body ">
+                    <div class="feature widget-2 text-center mt-0 mb-3">
+                        <i
+                            class=" fe fe-shopping-cart project bg-primary-transparent mx-auto text-primary "></i>
+                    </div>
+                    <h6 class="mb-1 text-muted">In Stock :</h6>
+                    <h3 class="font-weight-semibold">$46.465</h3>
+                    <!-- <h3 id="instock"> </h3> -->
+                </div>
+            </div>
+        </div>
+        <div class="col-xl-4 col-lg-6 col-sm-6 col-md-6">
+            <div class="card text-center">
+                <div class="card-body ">
+                    <div class="feature widget-2 text-center mt-0 mb-3">
+                        <i class="far fa-times-circle project bg-pink-transparent mx-auto text-pink "></i>
+                    </div>
+                    <h6 class="mb-1 text-muted">Out Of Stock :</h6>
+                    <h3 class="font-weight-semibold">$75.045</h3>
+                </div>
+            </div>
+        </div>
+        <div class="col-xl-4 col-lg-6 col-sm-6 col-md-6">
+            <div class="card text-center">
+                <div class="card-body">
+                    <div class="feature widget-2 text-center mt-0 mb-3">
+                        <i class="fe fe-box  project bg-teal-transparent mx-auto text-teal "></i>
+                    </div>
+                    <h6 class="mb-1 text-muted">Total :</h6>
+                    <h3 class="font-weight-semibold">$46.352</h3>
+                </div>
+            </div>
+        </div>
+    </div> 
+    
+    <div class="col-sm-12">
+        <div class="card card-success" >
+            <div class="card-header pb-0">
+                <h5 class="card-title mb-0 pb-0"></h5>
+            </div>
+            <div class="card-footer">
+                <h3>ITEMS</h3><div class="main-header-center ml-3 d-sm-none d-md-none d-lg-block">
+                   <!-- <button class="btn btn-primary" style="position: relative;" data-target="#modaldemo10" data-toggle="modal" href=""><i class="la la-bar-chart fa-lg" ></i> Add New Company</button> -->
+                <div class="col-xl-12">
+                    <div class="card mg-b-20">
+                        <div class="card-header pb-0">
+                            <div class="d-flex justify-content-between text-center">
+                                <h4 class="card-title mg-b-0 text-center">Manage Items</h4>
+                                <div class="card-body pb-0">
+									<div class="input-group mb-2">
+										<input type="text" style="width: 200px;" class="form-control" onkeyup="myFunction()" id="myInput" placeholder="Searching.....">
+										<span class="input-group-append">
+											<button class="btn ripple btn-primary" type="button">Search</button>
+										</span>
+									</div>
+								</div>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <div class="row row-sm">
+                                <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12 grid-margin">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <div class="table-responsive border-top userlist-table">
+                                                <table class="table card-table table-striped table-vcenter text-nowrap mb-0" id="myTbl">
+                                                    <thead>
+                                                        <tr>
+                                                            <th class="wd-lg-8p"><span>#</span></th>
+                                                            <th class="wd-lg-20p"><span>Items Name</span></th>
+                                                            <th class="wd-lg-20p"><span>QTY</span></th>
+                                                            <th class="wd-lg-20p"><span>Code</span></th>
+                                                            <th class="wd-lg-20p"><span>Catogery</span></th>
+                                                            <th class="wd-lg-20p">Price</th>
+                                                            <th class="wd-lg-20p">Action</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody id="items_table">
+                                                      
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                            <ul class="pagination mt-4 mb-0 float-right">
+                                                <li class="page-item page-prev disabled">
+                                                    <a class="page-link" href="#" tabindex="-1">Prev</a>
+                                                </li>
+                                                <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                                                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                                <li class="page-item"><a class="page-link" href="#">4</a></li>
+                                                <li class="page-item"><a class="page-link" href="#">5</a></li>
+                                                <li class="page-item page-next">
+                                                    <a class="page-link" href="#">Next</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal" id="modaldemo21">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content modal-content-demo">
+            <div class="modal-header">
+                <h6 class="modal-title">Edit Items Details</h6><button aria-label="Close" class="close" data-dismiss="modal" type="button"><span aria-hidden="true">&times;</span></button>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class=" col-sm-12">
+                        <div class="card card-success">
+                          <div class="card-header pb-0">
+                           Edit Form
+                          </div> 
+                          <div class="card-footer">
+                            <form class=" formcontrol needs-validation was-validated" >
+                               <!--  <div class="alert alert-outline-danger" role="alert" id="ecfildes">
+                                    <strong>All Field are required!</strong> 
+                                    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                      <span aria-hidden="true">&times;</span>
+                                    </button>
+                                  </div>
+                                  <div class="alert alert-outline-warning" role="alert" id="ewalert">
+                                    <button aria-label="Close" class="close" data-dismiss="alert" type="button">
+                                    <span aria-hidden="true">&times;</span></button>
+                                    <strong>Warning! Enter valied Details</strong> 
+                                </div>
+                                <div class="alert alert-outline-warning" role="alert" id="emalert">
+                                    <button aria-label="Close" class="close" data-dismiss="alert" type="button">
+                                    <span aria-hidden="true">&times;</span></button>
+                                    <strong>Warning! Enter valied Mobile number</strong> 
+                                </div>
+                                <div class="alert alert-outline-success" role="alert" id="ecreadted_alert">
+                                    <button aria-label="Close" class="close" data-dismiss="alert" type="button">
+                                    <span aria-hidden="true">&times;</span></button>
+                                    <strong>Well done!</strong>Company details has edited
+                                </div> -->
+                                <div class="row">
+                                    <div class="col-sm-12">
+                                        <div class="mb-3">
+                                            <p class="mg-b-10">ITEM NAME</p>
+                                            <input class="form-control form-control-sm" type="text" id="eitemname">
+                                        </div>
+                                    </div>
+                                  <div class="col-sm-6">
+                                      <div class="mb-3">
+                                          <p class="mg-b-10">ITEM HSN/SAC</p>
+                                          <input class="form-control form-control-sm" type="text" id="eitemhsc">
+                                      </div>
+                                  </div>
+                                  <div class="col-sm-6">
+                                      <div class="mb-3">
+                                          <p class="mg-b-10">PRODUCT CATEGORY</p>
+                                          <select class="SlectBox form-control form-control-sm" id="ecategory" required>
+                                          </select>
+                                      </div>
+                                  </div>
+                                  <div class="col-sm-4">
+                                      <div class="mb-3">
+                                          <p class="mg-b-10">SALE PRICE</p>
+                                          <input class="form-control form-control-sm" type="number" id="esaleprice">
+                                      </div>
+                                  </div>
+                                  <div class="col-sm-4">
+                                      <div class="mb-3">
+                                          <p class="mg-b-10">TAX </p>
+                                          <select class="SlectBox form-control form-control-sm"  id="estax">
+                                              <option value="tax">With tax</option>
+                                              <option value="withouttax">Without tax</option>
+                                          </select>
+                                      </div>
+                                  </div>
+                                  <div class="col-sm-4" id="staxbox">
+                                      <div class="mb-3">
+                                          <p class="mg-b-10"> SALE TAX RATE</p>
+                                          <select  class="SlectBox form-control form-control-sm" id="estaxr">
+                                             <option value="none">None</option>
+                                          </select>
+                                      </div>
+                                  </div>
+                                  <div class="col-sm-4">
+                                      <div class="mb-3">
+                                          <p class="mg-b-10">PURCHASE PRICE</p>
+                                          <input class="form-control form-control-sm" type="number" id="epurchaseprice">
+                                      </div>
+                                  </div>
+                                  <div class="col-sm-4">
+                                      <div class="mb-3">
+                                          <p class="mg-b-10">TAX TYPE</p>
+                                          <select class="SlectBox form-control form-control-sm" id="eptax">
+                                              <option value="With">With tax</option>
+                                              <option value="without">Without tax</option>
+                                          </select>
+                                      </div>
+                                  </div>
+                                  <div class="col-sm-4">
+                                      <div class="mb-3">
+                                          <p class="mg-b-10">PURCHASE TAX RATE</p>
+                                          <select class="SlectBox form-control form-control-sm" id="eptaxr">
+                                            <option value="none">None</option>
+                                          </select>
+                                      </div>
+                                  </div>
+                                  <div class="col-sm-4">
+                                      <div class="mb-3">
+                                          <p class="mg-b-10">ITEM LOCATION</p>
+                                          <input class="form-control form-control-sm" type="text" id="eitemloc">
+                                      </div>
+                                  </div>
+                                  <div class="col-sm-4">
+                                      <div class="mb-3">
+                                          <p class="mg-b-10">PRODUCT CODE</p>
+                                          <input class="form-control form-control-sm" type="number" id="eitemcode">
+                                      </div>
+                                  </div>
+                                  <div class="col-sm-4">
+                                      <div class="mb-3">
+                                          <p class="mg-b-10">AT PRICE UNIT</p>
+                                          <select class="SlectBox form-control form-control-sm"  id="epriceunit">
+        
+                                          </select>
+                                      </div>
+                                  </div>
+                                  <div class="col-sm-4">
+                                      <div class="mb-3">
+                                          <p class="mg-b-10">OPENING STOCK</p>
+                                          <input class="form-control form-control-sm" type="number" id="eopenings">
+                                      </div>
+                                  </div>
+                                  <div class="col-sm-4">
+                                      <div class="mb-3">
+                                          <p class="mg-b-10">ALERT STOCK QTY</p>
+                                          <input class="form-control form-control-sm" type="number" id="eminstock">
+                                      </div>
+                                  </div>
+                                  <div class="col-sm-4">
+                                      <div class="mb-3">
+                                          <p class="mg-b-10">DATE</p>
+                                          <div class="input-group ">
+                                              <div class="input-group-prepend">
+                                                  <div class="input-group-text">
+                                                      <i class="typcn typcn-calendar-outline tx-24 lh--9 op-6"></i>
+                                                  </div>
+                                              </div><input class="form-control form-control-sm fc-datepicker" id="ecdate" placeholder="MM/DD/YYYY" type="date">
+                                          </div>
+                                      </div>
+                                  </div>
+                                  
+                                  <div class="modal-footer">
+                                    <button class="btn ripple btn-primary" onclick="edititems();" style="width: 120px;" type="button">Save</button>
+                                    <button class="btn ripple btn-outline-secondary" data-dismiss="modal" type="button" style="width: 120px;">Close</button>
+                                </div>
+                            </div>
+                              </form>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal" id="modaldemo50">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content tx-size-sm">
+            <div class="modal-body tx-center pd-y-20 pd-x-20">
+                <button aria-label="Close" class="close" data-dismiss="modal" type="button"><span aria-hidden="true">&times;</span></button> <i class="icon icon ion-ios-close-circle-outline tx-100 tx-danger lh-1 mg-t-20 d-inline-block"></i>
+                <h4 class="tx-danger mg-b-20">Do you want delete this row ?</h4>
+               <button aria-label="Close" class="btn ripple btn-danger pd-x-25" data-dismiss="modal" type="button" onclick="delete_item();">Yes</button>
+               <button class="btn ripple btn-outline-secondary" data-dismiss="modal" type="button" >No</button>
+            </div>
+        </div>
+    </div>
+</div>
+  <!-- Internal Data tables -->
+  <script src="../assets/plugins/datatable/js/jquery.dataTables.min.js"></script>
+  <script src="../assets/plugins/datatable/js/dataTables.dataTables.min.js"></script>
+  <script src="../assets/plugins/datatable/js/dataTables.responsive.min.js"></script>
+  <script src="../assets/plugins/datatable/js/responsive.dataTables.min.js"></script>
+  <script src="../assets/plugins/datatable/js/jquery.dataTables.js"></script>
+  <script src="../assets/plugins/datatable/js/dataTables.bootstrap4.js"></script>
+  <script src="../assets/plugins/datatable/js/dataTables.buttons.min.js"></script>
+  <script src="../assets/plugins/datatable/js/buttons.bootstrap4.min.js"></script>
+  <script src="../assets/plugins/datatable/js/jszip.min.js"></script>
+  <script src="../assets/plugins/datatable/js/pdfmake.min.js"></script>
+  <script src="../assets/plugins/datatable/js/vfs_fonts.js"></script>
+  <script src="../assets/plugins/datatable/js/buttons.html5.min.js"></script>
+  <script src="../assets/plugins/datatable/js/buttons.print.min.js"></script>
+  <script src="../assets/plugins/datatable/js/buttons.colVis.min.js"></script>
+  <script src="../assets/plugins/datatable/js/dataTables.responsive.min.js"></script>
+  <script src="../assets/plugins/datatable/js/responsive.bootstrap4.min.js"></script>
+
+  <!--Internal  Datatable js -->
+  <script src="../assets/js/table-data.js"></script>
+  
+  <script src="../jsfiles/manage_items.js"></script>

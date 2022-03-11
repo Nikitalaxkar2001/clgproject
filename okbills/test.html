@@ -1,0 +1,274 @@
+<!-- Internal Data table css -->
+<link href="../assets/plugins/datatable/css/dataTables.bootstrap4.min.css" rel="stylesheet" />
+<link href="../assets/plugins/datatable/css/buttons.bootstrap4.min.css" rel="stylesheet">
+<link href="../assets/plugins/datatable/css/responsive.bootstrap4.min.css" rel="stylesheet" />
+<link href="../assets/plugins/datatable/css/jquery.dataTables.min.css" rel="stylesheet">
+<link href="../assets/plugins/datatable/css/responsive.dataTables.min.css" rel="stylesheet"/>
+<div class="row">
+    <div class="col-sm-6">
+        <div class="card ">
+            <div class="card-body " >
+                <div class="counter-status d-flex md-mb-4">
+                    <div class="table-responsive border-top userlist-table">
+                        <table
+                            class="table card-table table-striped table-vcenter text-nowrap mb-0">
+                            <thead>
+                                <tr>
+                                    <th class="wd-lg-8p">
+                                        <span>NAME:</span>
+                                    </th>
+                                </tr>
+                                <tr>
+                                    <th class="wd-lg-8p">
+                                        <span>PHONE:</span>
+                                    </th>
+                                </tr>
+                                <tr>
+                                    <th class="wd-lg-20p">
+                                        <span>EMAIL:</span>
+                                    </th>
+                                </tr>
+                            </thead>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-6">
+        <div class="card ">
+            <div class="card-body " >
+                <div class="counter-status d-flex md-mb-4">
+                    <div class="table-responsive border-top userlist-table">
+                        <table class="table card-table table-striped table-vcenter text-nowrap mb-0">
+                            <thead>
+                                <tr>
+                                    <th>
+                                        <div class="ml-auto">
+                                            <div class="row ">
+                                                <div class="media-icon  text-warning p-2">
+                                                    <i class="far fa-envelope fa-lg"></i>
+                                                </div>
+                                                <div class="media-icon text-success p-2">
+                                                    <i class="icon ion-logo-whatsapp fa-lg"></i>
+                                                </div>
+                                                <div class="media-icon  text-black p-2">
+                                                    <i class="icon ion-md-alarm fa-lg"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </th>
+                                </tr>
+                                <tr>
+                                    <th class="wd-lg-8p">
+                                        <span>ADDRESS</span>
+                                    </th>
+                                </tr>
+                                <tr>
+                                    <th class="wd-lg-20p">
+                                        <span>GSTIN:</span>
+                                    </th>
+                            </thead>
+                        </table>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-sm-4">
+        <div class="card mg-b-20" >
+            <div class="card-body" style="min-height:720px;">
+                <div class="pl-0">
+                    <div class="main-profile-overview ">
+                        <div class="main-img-user profile-user" style=" display: block;
+                        margin-left: auto;
+                        margin-right: auto;
+                        width: 35%;">
+                            <img alt="" src="../images/accounting-logo-design-260nw-604530587.webp"><a
+                                class="fas fa-camera profile-edit" href="JavaScript:void(0);"></a>
+                        </div>
+                        <!-- <div class="d-flex justify-content-between mg-b-20"> -->
+                        <div class="card-body pb-0">
+                            <div class="input-group mb-4">
+                                <span class="input-group-append">
+                                    <button class="btn ripple btn-warning"  data-target="#modaldemo3" data-toggle="modal" href=""style="width: 320px; height: 40px; border-radius: 25px;" id="form"  type="button">Add Coustomer</button>
+                                </span>
+                            </div>
+                            <!-- button search -->
+                        </div>
+                        <!-- </div> -->
+                        <div class="input-group mb-4">
+                            <input type="text" class="form-control" placeholder="Searching.....">
+                            <span class="input-group-append">
+                                <button class="btn ripple btn-primary" type="button">Search</button>
+                            </span>
+                        </div>
+                        <div class="table-responsive">
+                            <table class="table table-striped mg-b-0 text-md-nowrap">
+                                <thead>
+                                    <tr>
+                                        <th class="col-md-8 col mb20">PARTY</th>
+                                        <th class="col-md-4 col mb20">AMOUNT</th>
+                                    </tr>
+                                </thead>
+                            </table>
+                        </div>
+                        <!--skill bar-->
+                    </div><!-- main-profile-overview -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-xl-8">
+        <div class="card mg-b-20" style="min-height:720px;">
+            <div class="card-header pb-0">
+                <div class="d-flex justify-content-between">
+                    <h4 class="card-title mg-b-0">TRANSACTIONS</h4>
+                    <i class="mdi mdi-dots-horizontal text-gray"></i>
+                </div>
+            </div>
+            <div class="card-body">
+                <div class="table-responsive">
+                    <table id="example" class="table key-buttons text-md-nowrap">
+                        <thead>
+                            <tr>
+                                <th class="border-bottom-0">ID</th>
+                                <th class="border-bottom-0">TYPE</th>
+                                <th class="border-bottom-0">NUMBER</th>
+                                <th class="border-bottom-0">DATE</th>
+                                <th class="border-bottom-0">TOTAL</th>
+                                <th class="border-bottom-0">BALANCE</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Tiger Nixon</td>
+                                <td>System Architect</td>
+                                <td>Edinburgh</td>
+                                <td>61</td>
+                                <td>2011/04/25</td>
+                                <td>$320,800</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal" id="modaldemo3">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content modal-content-demo">
+            <div class="modal-header">
+                <h6 class="modal-title">Add Coustmer</h6><button aria-label="Close" class="close" data-dismiss="modal" type="button"><span aria-hidden="true">&times;</span></button>
+            </div>
+            <div class="alert alert-solid-danger mg-b-10 partyFields" id="partyFields" role="alert">
+                <button aria-label="Close" class="close" data-dismiss="alert" type="button">
+               <span aria-hidden="true">&times;</span></button>
+                 <strong>  Party Name & Phone Number require.</strong> 
+             </div>
+             <div class="alert alert-success coustmer-add-alert" role="alert">                                 New Coustmer Added sucessfully
+             <a href="#" class="alert-link"></a>.
+              </div>
+            <div class="modal-body" style="min-height: 400px;">
+                <form class="needs-validation was-validated">
+                    <div class="row row-sm">
+                        <div class="col-sm-6">
+                            <label>Coustmer Name</label>
+                            <div class="form-group has-success mg-b-0 mb-4">
+                                <input class="form-control coustmer" placeholder="Party name" required="" id="coustmer" type="text">
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <label>Phone number</label>
+                            <div class="form-group has-success mg-b-0 mb-4">
+                                <input class="form-control number" placeholder="Phone number" required="" id="phoneno" type="number">
+                            </div>
+                        </div>
+                    </div>
+                </form>
+    <!-- row closed -->
+    <div class="panel panel-primary tabs-style-2">
+        <div class=" tab-menu-heading">
+            <div class="tabs-menu1">
+                <!-- Tabs -->
+                <ul class="nav panel-tabs main-nav-line">
+                    <li><a href="#tab4" class="nav-link active" data-toggle="tab">Address
+                    </a></li>
+                    <li><a href="#tab5" class="nav-link" data-toggle="tab">Tax</a></li>
+                    <li><a href="#tab6" class="nav-link" data-toggle="tab">Opening balance</a></li>
+                </ul>
+            </div>
+        </div>
+<div class="panel-body tabs-menu-body main-content-body-right border">
+    <div class="tab-content">
+        <div class="tab-pane active" id="tab4">
+            <form class="needs-validation was-validated">
+                <div class="row row-sm">
+                    <div class="col-lg-6">
+                        <div class="form-group has-success mg-b-0 mb-4">
+                            <label>email</label>
+                            <input class="form-control eml" id="eml" placeholder="email id" required="" type="email">
+                            <label>Billing address</label>
+                            <textarea class="form-control mg-t-20 billingaddress" id="billingaddress" placeholder="Billing address" required="" rows="3"></textarea>
+                        </div>
+                     </div>
+                </div>
+            </form>
+        </div>
+                <div class="tab-pane" id="tab5">
+                    <form class="needs-validation was-validated">
+                        <div class="row row-sm">
+                            <div class="col-sm-6">
+                                <label>Tax Type</label>
+                                <div class="form-group has-success mg-b-0 mb-4">
+                                    <select class="SlectBox form-control tax" id="tax" required>
+                                       <option value="Unregistered/Consumer">Unregistered/Consumer</option>
+                                       <option value="Registered-Regular">Registered-Regular</option>
+                                       <option value="Registered-Composite">Registered-Composite</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <label>State</label>
+                                <div class="form-group has-success mg-b-0 mb-4">
+                                    <select class="SlectBox form-control state" id="state" required>
+                                        <option value="None">None</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="tab-pane" id="tab6">
+                    <form class="needs-validation was-validated">
+                        <div class="row row-sm">
+                            <div class="col-sm-6">
+                                <label>Opening Balance</label>
+                                <div class="form-group has-success mg-b-0 mb-4">
+                                    <input class="form-control openingb" placeholder="opening balance" id="openingb" required="" type="text">
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <label>As of Date</label>
+                                <div class="form-group has-success mg-b-0 mb-4 asdate">
+                                    <input class="form-control" id="asdate" required="" type="Date">
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+ </div>
+            <div class="modal-footer">
+                <button class="btn ripple btn-primary" type="button" onclick="addparty();">Save & New</button>
+                <button class="btn ripple btn-info" type="button">Save</button>
+            </div>
+        </div>
+    </div>
+</div>

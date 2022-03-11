@@ -1,0 +1,346 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, user-scalable=0'>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="Description" content="Bootstrap Responsive Admin Web Dashboard HTML5 Template">
+    <meta name="Author" content="Spruko Technologies Private Limited">
+    <meta name="Keywords"
+        content="admin,admin dashboard,admin dashboard template,admin panel template,admin template,admin theme,bootstrap 4 admin template,bootstrap 4 dashboard,bootstrap admin,bootstrap admin dashboard,bootstrap admin panel,bootstrap admin template,bootstrap admin theme,bootstrap dashboard,bootstrap form template,bootstrap panel,bootstrap ui kit,dashboard bootstrap 4,dashboard design,dashboard html,dashboard template,dashboard ui kit,envato templates,flat ui,html,html and css templates,html dashboard template,html5,jquery html,premium,premium quality,sidebar bootstrap 4,template admin bootstrap 4" />
+
+    <!-- Title -->
+    <title>OK bills</title>
+
+    <!-- Favicon -->
+    <link rel="icon" href="../assets/img/brand/favicon.png" type="image/x-icon" />
+
+    <!-- Icons css -->
+    <link href="../assets/css/icons.css" rel="stylesheet">
+
+     <!--  Right-sidemenu css -->
+     <link href="../assets/plugins/sidebar/sidebar.css" rel="stylesheet">
+
+    <!--  Custom Scroll bar-->
+    <link href="../assets/plugins/mscrollbar/jquery.mCustomScrollbar.css" rel="stylesheet" />
+
+      <!--  Left-Sidebar css -->
+      <link rel="stylesheet" href="../assets/css/closed-sidemenu.css">
+
+      <!-- style css -->
+      <link rel="stylesheet" href="../assets/css/style.css">
+
+      <!--- Dark-mode css --->
+    <link href="../assets/css/style-dark.css" rel="stylesheet">
+
+    <!---Skinmodes css-->
+    <link href="../assets/css/skin-modes.css" rel="stylesheet" />
+
+      <!--- Animations css-->
+      <link href="../assets/css/animate.css" rel="stylesheet">
+
+    <!--- Internal Sweet-Alert css-->
+    <link href="../assets/plugins/sweet-alert/sweetalert.css" rel="stylesheet">
+
+    <!--Internal   Notify -->
+    <link href="../assets/plugins/notify/css/notifIt.css" rel="stylesheet" />
+    <script>
+        window.$ = window.jQuery = require('jQuery');
+    </script>
+    <script src="https://code.jquery.com/jquery-3.3.1.js"
+        integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous">
+            $(scrollPane).mCustomScrollbar();
+        </script>
+</head>
+
+<body class="main-body app sidebar-mini dark-theme">
+    <!-- Loader -->
+    <div id="global-loader">
+        <img src="../assets/img/loader.svg" class="loader-img" alt="Loader">
+    </div>
+    <!-- /Loader -->
+    <!-- Page -->
+    <div class="page addsale">
+        <!-- main-sidebar -->
+        <div class="app-sidebar__overlay" data-toggle="sidebar">
+
+        </div>
+        <div class="aside">
+
+        </div>
+        <!-- main-content -->
+        <div class="main-content app-content">
+            <div class="header">
+                
+            </div>
+            <!-- container -->
+            <div class="container-fluid my-4 section">
+               
+            </div>
+            <!-- Container closed -->
+        </div>
+        <!-- main-content closed -->
+        <div class="footer">
+
+        </div>
+    </div>
+    <!-- End Page -->
+
+    <!-- Back-to-top -->
+    <a href="#top" id="back-to-top"><i class="las la-angle-double-up"></i></a>
+
+    <!-- JQuery min js -->
+    <script src="../assets/plugins/jquery/jquery.min.js"></script>
+
+    <!-- Bootstrap Bundle js -->
+    <script src="../assets/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Ionicons js -->
+    <script src="../assets/plugins/ionicons/ionicons.js"></script>
+
+    <!-- Moment js -->
+    <script src="../assets/plugins/moment/moment.js"></script>
+
+    <!-- Sticky js -->
+    <script src="../assets/js/sticky.js"></script>
+
+    <!-- eva-icons js -->
+    <script src="../assets/js/eva-icons.min.js"></script>
+
+    <!-- Rating js-->
+    <script src="../assets/plugins/rating/jquery.rating-stars.js"></script>
+    <script src="../assets/plugins/rating/jquery.barrating.js"></script>
+
+     <!-- Custom Scroll bar Js-->
+     <script src="../assets/plugins/mscrollbar/jquery.mCustomScrollbar.concat.min.js"></script>
+
+    <!-- custom js -->
+    <script src="../assets/js/custom.js"></script>
+
+    <!-- Sweet-alert js  -->
+    <script src="../assets/plugins/sweet-alert/sweetalert.min.js"></script>
+    <script src="../assets/js/sweet-alert.js"></script>
+
+    <!--Internal  Sweet-Alert js-->
+    <script src="../assets/plugins/sweet-alert/sweetalert.min.js"></script>
+    <script src="../assets/plugins/sweet-alert/jquery.sweet-alert.js"></script>
+
+    <!--Internal  Notify js -->
+    <script src="../assets/plugins/notify/js/notifIt.js"></script>
+    <script src="../assets/plugins/notify/js/notifit-custom.js"></script>
+
+    <!--Dashboard -->
+    <script src="../jsfiles/dashboard.js"></script>
+    
+    <!-- pricing plan -->
+    <script src="../jsfiles/pricingplans.js"></script>
+   
+    <script>
+        $('.aside').load('../includes/aside.html');
+        $('.header').load('../includes/header.html');
+        $('.footer').load('../includes/footer.html');
+    </script>
+    <script>
+          $('.section').load('../uicomponents/section_components/section-dashboard.html');
+        $(document).on('click','.dashboardbtn',function(e){
+            e.preventDefault();
+            //loader show
+            $('.section').load('../uicomponents/section_components/section_loader.html');
+            setTimeout(() => {
+            $('.loader-img').hide();
+            $('.section').load('../uicomponents/section_components/section-dashboard.html');
+             }, 500);           //loader hide
+        });
+        $(document).on('click','.partybtn',function(e){
+            e.preventDefault();
+            $('.section').load('../uicomponents/section_components/section_loader.html');
+            setTimeout(() => {
+            $('.loader-img').hide();
+            $('.section').load('../uicomponents/section_components/section-parties.html');
+         }, 500);           
+		});
+        $(document).on('click','.suppliers_btn',function(e){
+            e.preventDefault();
+            $('.section').load('../uicomponents/section_components/section_loader.html');
+            setTimeout(() => {
+            $('.loader-img').hide();
+            $('.section').load('../uicomponents/section_components/section-suppliers.html');
+         }, 500);      
+        });
+        $(document).on('click','.itembtn',function(e){
+            e.preventDefault();
+            $('.section').load('../uicomponents/section_components/section_loader.html');
+            setTimeout(() => {
+            $('.loader-img').hide();
+            $('.section').load('../uicomponents/section_components/section-items.html');
+         }, 500);      
+        });
+        $(document).on('click','.saleinvoicebtn',function(e){
+            e.preventDefault();
+            $('.section').load('../uicomponents/section_components/section_loader.html');
+            setTimeout(() => {
+            $('.loader-img').hide();
+            $('.section').load('../uicomponents/section_components/section-sale-invoices.html');
+         }, 500);      	
+        });
+        $(document).on('click','.estimatebtn',function(e){
+            e.preventDefault();
+            $('.section').load('../uicomponents/section_components/section_loader.html');
+            setTimeout(() => {
+            $('.loader-img').hide();
+            $('.section').load('../uicomponents/section_components/section-estimate.html');
+         }, 500);      	
+		
+			//alert('ok')
+        });
+        $(document).on('click','.payment_in_btn',function(e){
+            e.preventDefault();
+            $('.section').load('../uicomponents/section_components/section_loader.html');
+            setTimeout(() => {
+            $('.loader-img').hide();
+            $('.section').load('../uicomponents/section_components/section-payment-in.html');
+         }, 500);      		
+        });
+        $(document).on('click','.sale_order_btn',function(e){
+            e.preventDefault();
+            $('.section').load('../uicomponents/section_components/section_loader.html');
+            setTimeout(() => {
+            $('.loader-img').hide();
+            $('.section').load('../uicomponents/section_components/section-sale-orders.html');
+         }, 500);      	
+        });
+        $(document).on('click','.bank_account',function(e){
+            e.preventDefault();
+            $('.section').load('../uicomponents/section_components/section_loader.html');
+            setTimeout(() => {
+            $('.loader-img').hide();
+        	$('.section').load('../uicomponents/section_components/section_bankac.html');
+         }, 500);      	
+		
+        });
+        $(document).on('click','.expenceBtn',function(e){
+            e.preventDefault();
+            setTimeout(() => {
+            $('.loader-img').hide();
+            $('.section').load('../uicomponents/section_components/section-expences.html');
+         }, 500);     	
+        });
+        $(document).on('click','#sale',function(e){
+            e.preventDefault();
+            $('.section').load('../uicomponents/section_components/section_loader.html');
+            setTimeout(() => {
+            $('.loader-img').hide();
+            $('.addsale').load('../uicomponents/section_components/section-add-sale.html');
+         }, 500);      	
+			
+        });
+
+        $(document).on('click','#close',function(e){
+        e.preventDefault();
+        $('.section').load('../uicomponents/section_components/section_loader.html');
+            setTimeout(() => {
+            $('.loader-img').hide();
+            $('.section').load('../uicomponents/section_components/section-parties.html');
+         }, 500);      	
+        });
+        $(document).on('click','.managesupplierbtn',function(e){
+            e.preventDefault();
+            $('.section').load('../uicomponents/section_components/section_loader.html');
+            setTimeout(() => {
+            $('.loader-img').hide();
+            $('.section').load('../uicomponents/section_components/section_managesuppliers.html');
+         }, 500);      	
+        });
+        $(document).on('click','.nwsaleinvoicebtn',function(e){
+        e.preventDefault();
+        $('.section').load('../uicomponents/section_components/section_loader.html');
+            setTimeout(() => {
+            $('.loader-img').hide();
+            $('.section').load('../uicomponents/section_components/section-new-invoice.html');
+         }, 500);      	
+        });
+        $(document).on('click','.sviewbtn',function(e){
+        e.preventDefault();
+        $('.section').load('../uicomponents/section_components/section_loader.html');
+            setTimeout(() => {
+            $('.loader-img').hide();
+            $('.section').load('../uicomponents/section_components/section-view-suppliers.html');
+         }, 500);      	
+        });
+        $(document).on('click','.msaleinvoicebtn',function(e){
+        e.preventDefault();
+        $('.section').load('../uicomponents/section_components/section_loader.html');
+            setTimeout(() => {
+            $('.loader-img').hide();
+            $('.section').load('../uicomponents/section_components/section-parties.html');
+         }, 500);      	
+        });
+        $(document).on('click','.delivery_challan_btn',function(e){
+            e.preventDefault();
+            $('.section').load('../uicomponents/section_components/section_loader.html');
+            setTimeout(() => {
+            $('.loader-img').hide();
+            $('.section').load('../uicomponents/section_components/section-delivery_challan.html');
+         }, 500);      	
+			
+        });
+        $(document).on('click','.newitembtn',function(e){
+            e.preventDefault();
+            $('.section').load('../uicomponents/section_components/section_loader.html');
+            setTimeout(() => {
+            $('.loader-img').hide();
+            $('.section').load('../uicomponents/section_components/section_new_items.html');
+         }, 500);      	
+        });
+        $(document).on('click','.productcatogerybtn',function(e){
+            e.preventDefault();
+            $('.section').load('../uicomponents/section_components/section_loader.html');
+            setTimeout(() => {
+            $('.loader-img').hide();
+            $('.section').load('../uicomponents/section_components/section_product_catogery.html');
+         }, 500);      	
+			
+        });
+        $(document).on('click','.manageitembtn',function(e){
+            e.preventDefault();
+            $('.section').load('../uicomponents/section_components/section_loader.html');
+            setTimeout(() => {
+            $('.loader-img').hide();
+            $('.section').load('../uicomponents/section_components/section_manageitem.html');
+         }, 500);      		
+        });
+        $(document).on('click','.nwpurchaseinvoicebtn',function(e){
+        e.preventDefault();
+        $('.section').load('../uicomponents/section_components/section_loader.html');
+            setTimeout(() => {
+            $('.loader-img').hide();
+            $('.section').load('../uicomponents/section_components/section-new-purchase.html');
+         }, 500);      	
+        });
+        $(document).on('click','.addsupp',function(e){
+            e.preventDefault();
+            $('.section').load('../uicomponents/section_components/section_loader.html');
+            setTimeout(() => {
+            $('.loader-img').hide();
+            $('.section').load('../uicomponents/section_components/section-suppliers.html')
+         }, 500);      	
+        });
+        $(document).on('click','.addsupp',function(e){
+            e.preventDefault();
+            $('.section').load('../uicomponents/section_components/section_loader.html');
+            setTimeout(() => {
+            $('.loader-img').hide();
+            $('.section').load('../uicomponents/section_components/section-suppliers.html')
+         }, 500);      	
+        });
+        $(document).on('click','.accountsbtn',function(e){
+            e.preventDefault();
+            $('.section').load('../uicomponents/section_components/section_loader.html');
+            setTimeout(() => {
+            $('.loader-img').hide();
+            $('.section').load('../uicomponents/section_components/section-add-accounts.html')
+         }, 500);      	
+        });
+    </script>
+</body>
+</html>

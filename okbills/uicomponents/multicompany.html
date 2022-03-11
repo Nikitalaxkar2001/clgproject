@@ -1,0 +1,497 @@
+
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, user-scalable=0'>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="Description" content="Bootstrap Responsive Admin Web Dashboard HTML5 Template">
+    <meta name="Author" content="Spruko Technologies Private Limited">
+    <meta name="Keywords"
+        content="admin,admin dashboard,admin dashboard template,admin panel template,admin template,admin theme,bootstrap 4 admin template,bootstrap 4 dashboard,bootstrap admin,bootstrap admin dashboard,bootstrap admin panel,bootstrap admin template,bootstrap admin theme,bootstrap dashboard,bootstrap form template,bootstrap panel,bootstrap ui kit,dashboard bootstrap 4,dashboard design,dashboard html,dashboard template,dashboard ui kit,envato templates,flat ui,html,html and css templates,html dashboard template,html5,jquery html,premium,premium quality,sidebar bootstrap 4,template admin bootstrap 4" />
+
+    <!-- Title -->
+    <title>OK bills</title>
+
+    	<!-- Favicon -->
+		<link rel="icon" href="../assets/img/brand/favicon.png" type="image/x-icon"/>
+        
+		<!-- Icons css -->
+        <link href="../assets/css/icons.css" rel="stylesheet">
+        
+        <link href="../assets/plugins/datatable/css/dataTables.bootstrap4.min.css" rel="stylesheet" />
+        <link href="../assets/plugins/datatable/css/buttons.bootstrap4.min.css" rel="stylesheet">
+        <link href="../assets/plugins/datatable/css/responsive.bootstrap4.min.css" rel="stylesheet" />
+        <link href="../assets/plugins/datatable/css/jquery.dataTables.min.css" rel="stylesheet">
+        <link href="../assets/plugins/datatable/css/responsive.dataTables.min.css" rel="stylesheet">
+
+         <!--- Internal Sweet-Alert css-->
+        <link href="../assets/plugins/sweet-alert/sweetalert.css" rel="stylesheet">
+
+        <!--Internal   Notify -->
+        <link href="../assets/plugins/notify/css/notifIt.css" rel="stylesheet" />
+
+		<!--  Right-sidemenu css -->
+		<link href="../assets/plugins/sidebar/sidebar.css" rel="stylesheet">
+
+		<!--  Left-Sidebar css -->
+		<link rel="stylesheet" href="../assets/css/closed-sidemenu.css">
+
+		<!--- Style css --->
+		<link href="../assets/css/style.css" rel="stylesheet">
+
+		<!--- Dark-mode css --->
+		<link href="../assets/css/style-dark.css" rel="stylesheet">
+
+		<!---Skinmodes css-->
+        <link href="../assets/css/skin-modes.css" rel="stylesheet" />
+        
+         <!--Internal  TelephoneInput css-->
+		<link rel="stylesheet" href="../assets/plugins/telephoneinput/telephoneinput.css">
+
+		<!--- Animations css-->
+		<link href="../assets/css/animate.css" rel="stylesheet">
+
+    <script>
+        window.$ = window.jQuery = require('jQuery');
+    </script>
+    <script src="https://code.jquery.com/jquery-3.3.1.js"
+        integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous">
+            $(scrollPane).mCustomScrollbar();
+        </script>
+</head>
+
+<body class="main-body app sidebar-mini dark-theme">
+
+    <!-- Loader -->
+    <div id="global-loader">
+        <img src="../assets/img/loader.svg" class="loader-img" alt="Loader">
+    </div>
+    <!-- /Loader -->
+    <!-- Page -->
+            <!-- container -->
+            <div class="container-fluid my-4">
+                <div class="col-sm-12">
+                    <div class="card card-primary" style="min-height:120px;">
+                        <div class="card-header pb-0">
+                            <h5 class="card-title mb-0 pb-0">Company</h5>
+                        </div>
+                        <div class="card-footer">
+                           <h3>COMPANIES</h3>
+                            <button class="btn btn-primary" data-target="#modaldemo10" data-toggle="modal" href=""><i class="la la-bar-chart fa-lg" ></i> Add New Company</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12">
+                    <div class="card card-primary ">
+                        <div class="card-header pb-0">
+                            <div class="d-flex justify-content-between">
+                                <h4 class="card-title mg-b-0">Company Details</h4>
+                                <i class="mdi mdi-dots-horizontal text-gray"></i>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                        </div>
+                            <div class="card-footer ">
+                                <div class="table-responsive">
+                                    <table id="example4" width = "100%" class="table key-buttons text-md-nowrap">
+                                        <thead>
+                                            <tr>
+                                                <th class="border-bottom-0"><span></span></th>
+                                                <th class="border-bottom-0"><span>Company Name</span></th>
+                                                <th class="border-bottom-0"><span>Created</span></th>
+                                                <th class="border-bottom-0"><span>Email</span></th>
+                                                <th class="border-bottom-0"><span>Mobile no.</span></th>
+                                                <th class="border-bottom-0">Action</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                           
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                       </div>
+                    </div>
+            </div>
+            <!-- Container closed -->
+        <!-- LOG IN MODAL -->
+        <div class="modal" id="modaldemo8">
+				<div class="modal-dialog modal-dialog-centered" role="document">
+					<div class="modal-content modal-content-demo">
+						<div class="modal-header">
+							<h6 class="modal-title">Log In Your Company</h6><button aria-label="Close" class="close" data-dismiss="modal" type="button"><span aria-hidden="true">&times;</span></button>
+                        </div>
+                        <div class="row">
+                            <div class=" col-sm-12">
+                             <div class="card card-success">
+						        <div class="modal-body"> 
+                                     <div class="alert alert-outline-danger mg-b-10" id="Fields" role="alert">
+                                       <button aria-label="Close" class="close" data-dismiss="alert" type="button">
+                                      <span aria-hidden="true">&times;</span></button>
+                                        <strong>  Username & password require.</strong> 
+                                </div>
+                             <div class="alert alert-outline-danger mg-b-10" id="incorrect" role="alert">
+                                <button aria-label="Close" class="close" data-dismiss="alert" type="button">
+                                <span aria-hidden="true">&times;</span></button>
+                                <strong>  Invalied username and password.</strong> 
+                            </div>
+                        <div class="card-footer">
+                             <form class="formcontrol">
+                                <div class="row">
+                                    <div class="col-sm-12">
+                                        <div class="mb-3">
+                                            <p class="mg-b-10">Username</p>
+                                            <div class="input-group ">
+                                                <div class="input-group-prepend">
+                                                    <div class="input-group-text">
+                                                        <i class="si si-user tx-24 lh--9 op-6"></i>
+                                                    </div>
+                                                </div><input id="user" class="form-control " placeholder="Username" type="text">
+                                            </div>
+                                        </div>
+                                    </div>
+                                  <div class="col-sm-12">
+                                    <div class="mb-3">
+                                        <p class="mg-b-10">Password</p>
+                                        <div class="input-group ">
+                                            <div class="input-group-prepend">
+                                                <div class="input-group-text">
+                                                    <i class="las la-lock tx-24 lh--9 op-6"></i>
+                                                </div>
+                                            </div><input id="pass" class="form-control fc-datepicker" placeholder="Password" type="password">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+						</div>
+						<div class="modal-footer">
+							<button class="btn ripple btn-primary" onclick ="login();" type="button">Log in</button>
+							<button class="btn ripple btn-secondary" data-dismiss="modal" type="button">Close</button>
+						</div>
+					</div>
+                </div>
+              </div>
+            </div>
+        </div>
+    </div>
+</div>
+            <!--Edit Modal  -->
+   <div class="modal" id="modaldemo3">
+            <div class="modal-dialog modal-lg" role="document">
+                <div class="modal-content modal-content-demo">
+                    <div class="modal-header">
+                        <h6 class="modal-title">Edit Company Details</h6><button aria-label="Close" class="close" data-dismiss="modal" type="button"><span aria-hidden="true">&times;</span></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row">
+                            <div class=" col-sm-12">
+                                <div class="card card-success">
+                                  <div class="card-header pb-0">
+                                   Edit Form
+                                  </div> 
+                                  <div class="card-footer">
+                                    <form class=" formcontrol needs-validation was-validated" >
+                                        <div class="alert alert-outline-danger" role="alert" id="ecfildes">
+                                            <strong>All Field are required!</strong> 
+                                            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                              <span aria-hidden="true">&times;</span>
+                                            </button>
+                                          </div>
+                                          <div class="alert alert-outline-warning" role="alert" id="ewalert">
+                                            <button aria-label="Close" class="close" data-dismiss="alert" type="button">
+                                            <span aria-hidden="true">&times;</span></button>
+                                            <strong>Warning! Enter valied Details</strong> 
+                                        </div>
+                                        <div class="alert alert-outline-warning" role="alert" id="emalert">
+                                            <button aria-label="Close" class="close" data-dismiss="alert" type="button">
+                                            <span aria-hidden="true">&times;</span></button>
+                                            <strong>Warning! Enter valied Mobile number</strong> 
+                                        </div>
+                                        <div class="alert alert-outline-success" role="alert" id="ecreadted_alert">
+                                            <button aria-label="Close" class="close" data-dismiss="alert" type="button">
+                                            <span aria-hidden="true">&times;</span></button>
+                                            <strong>Well done!</strong>Company details has edited
+                                        </div>
+                                         <div class="row">
+                                              <div class="col-sm-12">
+                                                  <div class="mb-3">
+                                                      <p class="mg-b-10">COMPANY NAME</p>
+                                                      <input class="form-control form-control-sm" id="ecompany" type="text" required> 
+                                                  </div>
+                                            </div>
+                                            <div class="col-sm-4">
+                                                <div class="mb-3">
+                                                    <p class="mg-b-10">ADDRESS</p>
+                                                    <input class="form-control form-control-sm" id="eaddress" type="text" required>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-4">
+                                                <div class="mb-3">
+                                                    <p class="mg-b-10">CITY</p>
+                                                    <input class="form-control form-control-sm" id="ecity" type="text" required>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-4">
+                                                <div class="mb-3">
+                                                    <p class="mg-b-10">PIN CODE</p>
+                                                    <input class="form-control form-control-sm" id="epin" type="text" required>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-4">
+                                                <div class="mb-3">
+                                                    <p class="mg-b-10">STATE</p>
+                                                    <input class="form-control form-control-sm" id="estate" type="text" required>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-4">
+                                                <div class="mb-3">
+                                                    <p class="mg-b-10">Phone</p>
+                                                    <input class="form-control form-control-sm" id="ephone" type="number" required>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6">
+                                                <div class="mb-3">
+                                                    <p class="mg-b-10">WEBSITE</p>
+                                                    <input class="form-control form-control-sm" id="ewebsite" type="text" required>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6">
+                                                <div class="mb-3">
+                                                    <p class="mg-b-10">EMAIL</p>
+                                                    <input class="form-control form-control-sm" id="eemail" type="email" required>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-4">
+                                                <div class="mb-3">
+                                                    <p class="mg-b-10">TAX TYPE</p>
+                                                    <select class="SlectBox form-control" id="etax" required>
+                                                        <option value="gst">GST</option>
+                                                        <option value="vat">VAT</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6">
+                                                <div class="mb-3">
+                                                    <p class="mg-b-10">Username</p>
+                                                    <input class="form-control form-control-sm" id="euser" type="text" required>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6">
+                                                <div class="mb-3">
+                                                    <p class="mg-b-10">Password</p>
+                                                    <input class="form-control form-control-sm" id="epass" type="password" required>
+                                                </div>
+                                            </div>
+                                          </div>
+                                      </form>
+                                  </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn ripple btn-primary" onclick="edit();" type="button">Save changes</button>
+                        <button class="btn ripple btn-secondary" data-dismiss="modal" type="button">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Create Company Modal -->
+        <div class="modal" id="modaldemo10">
+            <div class="modal-dialog modal-lg" role="document">
+                <div class="modal-content modal-content-demo">
+                    <div class="modal-header">
+                        <h6 class="modal-title">Add Company Details</h6><button aria-label="Close" class="close" data-dismiss="modal" type="button"><span aria-hidden="true">&times;</span></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row">
+                            <div class=" col-sm-12">
+                                <div class="card card-success">
+                                  <div class="card-footer">
+                                    <form class="formcontrol" >
+                                        <div class="alert alert-outline-danger" role="alert" id="cfildes">
+                                            <strong>All Field are required!</strong> 
+                                            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                              <span aria-hidden="true">&times;</span>
+                                            </button>
+                                          </div>
+                                          <div class="alert alert-outline-warning" role="alert" id="walert">
+                                            <button aria-label="Close" class="close" data-dismiss="alert" type="button">
+                                            <span aria-hidden="true">&times;</span></button>
+                                            <strong>Warning! Enter valied Details</strong> 
+                                        </div>
+                                        <div class="alert alert-outline-warning" role="alert" id="malert">
+                                            <button aria-label="Close" class="close" data-dismiss="alert" type="button">
+                                            <span aria-hidden="true">&times;</span></button>
+                                            <strong>Warning! Enter valied Mobile number</strong> 
+                                        </div>
+                                        <div class="alert alert-outline-success" role="alert" id="creadted_alert">
+                                            <button aria-label="Close" class="close" data-dismiss="alert" type="button">
+                                            <span aria-hidden="true">&times;</span></button>
+                                            <strong>Well done!</strong>Company has created successfully
+                                        </div>
+                                         <div class="row">
+                                              <div class="col-sm-12">
+                                                  <div class="mb-3">
+                                                      <p class="mg-b-10">COMPANY NAME</p>
+                                                      <input class="form-control form-control-sm" id="companyn" type="text" required> 
+                                                  </div>
+                                            </div>
+                                            <div class="col-sm-4">
+                                                <div class="mb-3">
+                                                    <p class="mg-b-10">ADDRESS</p>
+                                                    <input class="form-control form-control-sm" id="address" type="text" required>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-4">
+                                                <div class="mb-3">
+                                                    <p class="mg-b-10">CITY</p>
+                                                    <input class="form-control form-control-sm" id="city" type="text" required>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-4">
+                                                <div class="mb-3">
+                                                    <p class="mg-b-10">PIN CODE</p>
+                                                    <input class="form-control form-control-sm" id="pin" type="text" required>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-4">
+                                                <div class="mb-3">
+                                                    <p class="mg-b-10">STATE</p>
+                                                    <input class="form-control form-control-sm" id="state" type="text" required>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-4">
+                                                <div class="mb-3">
+                                                    <p class="mg-b-10">Phone</p>
+                                                    <input class="form-control form-control-sm" id="phone" type="number" required>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-4">
+                                                <div class="mb-3">
+                                                    <p class="mg-b-10">Choose Financial year</p>
+                                                    <select class="SlectBox form-control form-control-sm year" id="year" required> 
+                                                     </select>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6">
+                                                <div class="mb-3">
+                                                    <p class="mg-b-10">WEBSITE</p>
+                                                    <input class="form-control form-control-sm" id="website" type="text" required>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6">
+                                                <div class="mb-3">
+                                                    <p class="mg-b-10">EMAIL</p>
+                                                    <input class="form-control form-control-sm" id="email" type="email" required>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-4">
+                                                <div class="mb-3">
+                                                    <p class="mg-b-10">TAX TYPE</p>
+                                                    <select class="SlectBox form-control" id="tax" required>
+                                                        <option value="gst">GST</option>
+                                                        <option value="vat">VAT</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-4">
+                                                <div class="mb-3">
+                                                    <p class="mg-b-10">MOBILE NO.</p>
+                                                    <div class="input-group telephone-input">
+                                                        <input type="tel" id="mobile-number"  class="mobno" placeholder="e.g. +1 702 123 4567" required>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6">
+                                                <div class="mb-3">
+                                                    <p class="mg-b-10">Username</p>
+                                                    <input class="form-control form-control-sm" id="username" type="text" required>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6">
+                                                <div class="mb-3">
+                                                    <p class="mg-b-10">Password</p>
+                                                    <input class="form-control form-control-sm" id="pass" type="password" required>
+                                                </div>
+                                            </div>
+                                          </div>
+                                      </form>
+                                  </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn ripple btn-primary"  onclick="create();"  type="button" id="created">Creat Company </button>
+                        <button class="btn ripple btn-secondary" data-dismiss="modal" type="button">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    <!-- End Page -->
+        <!-- Back-to-top -->
+        <a href="#top" id="back-to-top"><i class="las la-angle-double-up"></i></a>
+        
+		<!-- JQuery min js -->
+		<script src="../assets/plugins/jquery/jquery.min.js"></script>
+           
+		<!-- Bootstrap Bundle js -->
+		<script src="../assets/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+		<!-- Ionicons js -->
+		<script src="../assets/plugins/ionicons/ionicons.js"></script>
+
+		<!-- eva-icons js -->
+		<script src="../assets/js/eva-icons.min.js"></script>
+
+		<!-- Rating js-->
+		<script src="../assets/plugins/rating/jquery.rating-stars.js"></script>
+		<script src="../assets/plugins/rating/jquery.barrating.js"></script>
+        
+		<!-- custom js -->
+        <script src="../assets/js/custom.js"></script>
+
+         <!-- tel -->
+       <script src="../assets/plugins/telephoneinput/telephoneinput.js"></script>
+       <script src="../assets/plugins/telephoneinput/inttelephoneinput.js"></script>
+
+       <!-- Internal Data tables -->
+ <script src="../assets/plugins/datatable/js/jquery.dataTables.min.js"></script>
+ <script src="../assets/plugins/datatable/js/dataTables.dataTables.min.js"></script>
+ <script src="../assets/plugins/datatable/js/dataTables.responsive.min.js"></script>
+ <script src="../assets/plugins/datatable/js/responsive.dataTables.min.js"></script>
+ <script src="../assets/plugins/datatable/js/jquery.dataTables.js"></script>
+ <script src="../assets/plugins/datatable/js/dataTables.bootstrap4.js"></script>
+ <script src="../assets/plugins/datatable/js/dataTables.buttons.min.js"></script>
+ <script src="../assets/plugins/datatable/js/buttons.bootstrap4.min.js"></script>
+ <script src="../assets/plugins/datatable/js/jszip.min.js"></script>
+ <script src="../assets/plugins/datatable/js/pdfmake.min.js"></script>
+ <script src="../assets/plugins/datatable/js/vfs_fonts.js"></script>
+ <script src="../assets/plugins/datatable/js/buttons.html5.min.js"></script>
+ <script src="../assets/plugins/datatable/js/buttons.print.min.js"></script>
+ <script src="../assets/plugins/datatable/js/buttons.colVis.min.js"></script>
+ <script src="../assets/plugins/datatable/js/dataTables.responsive.min.js"></script>
+ <script src="../assets/plugins/datatable/js/responsive.bootstrap4.min.js"></script>
+
+ <!--Internal  Datatable js -->
+ <script src="../assets/js/table-data.js"></script>
+        <!-- multicompany.js -->
+        <script src="../jsfiles/multicompany.js"></script>
+
+         <!--Internal  Sweet-Alert js-->
+        <script src="../assets/plugins/sweet-alert/sweetalert.min.js"></script>
+        <script src="../assets/plugins/sweet-alert/jquery.sweet-alert.js"></script>
+
+        <!--Internal  Notify js -->
+        <script src="../assets/plugins/notify/js/notifIt.js"></script>
+        <script src="../assets/plugins/notify/js/notifit-custom.js"></script>
+         <!--compaydetails.js -->
+        <script src="../jsfiles/companydetails.js"></script>
+    <script>
+        $('.footer').load('../includes/footer.html');
+    </script>
+</body>
+</html>

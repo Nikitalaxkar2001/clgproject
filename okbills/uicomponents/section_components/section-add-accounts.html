@@ -1,0 +1,86 @@
+      <!---Internal Fileupload css-->
+      <link href="../assets/plugins/fileuploads/css/fileupload.css" rel="stylesheet" type="text/css">
+      <!---Internal Fancy uploader css-->
+      <link href="../assets/plugins/fancyuploder/fancy_fileupload.css" rel="stylesheet" />  
+        <div class="row">
+            <div class="col-12 col-sm-12 col-xl-12 col-lg-12">
+              <div class="col-12 col-sm-12 col-lg-12 col-xl-12">
+                  <div class="card card-primary">
+                      <div class="card-header pb-0">
+                          <h5 class="card-title mb-0 pb-0">Add New Account</h5>
+                      </div>
+                      <div class="card-body text-primary">
+                      </div>
+                  <div class="card-footer formcontrol2">
+                      <div class="alert alert-outline-danger mg-b-10" id="Fields" role="alert">
+                          <button aria-label="Close" class="close" data-dismiss="alert" type="button">
+                          <span aria-hidden="true">&times;</span></button>
+                          <strong>  All fields are required.</strong> 
+                      </div>
+                      <div class="alert alert-outline-success mg-b-10" id="itemcreated" role="alert">
+                          <button aria-label="Close" class="close" data-dismiss="alert" type="button">
+                          <span aria-hidden="true">&times;</span></button>
+                          <strong> Well done ! New Items has added.</strong> 
+                      </div>
+                      <div class="row">
+                          <div class="col-sm-12">
+                                  <div class="mb-12">
+                                      <p class="mg-b-10">Account Number</p>
+                                      <input class="form-control " type="number" id="accno">
+                                  </div>
+                          </div>
+                            <div class="col-sm-12">
+                                <div class="mb-12">
+                                    <p class="mg-b-10">Account Name</p>
+                                    <input class="form-control " type="text" id="accname">
+                                </div>
+                            </div>
+                            <div class="col-sm-12">
+                              <div class="mb-3">
+                                  <p class="mg-b-10">Intial Balance</p>
+                                  <input class="form-control" type="number" id="intialbalance">
+                              </div>
+                          </div>
+                           
+                            <div class="col-sm-12">
+                                <div class="mb-3">
+                                    <p class="mg-b-10">Note</p>
+                                    <input class="form-control " type="text" id="note">
+                                </div>
+                              </div>
+                            <div class="col-sm-12">
+                              <div class="mb-3">
+                                  <p class="mg-b-10">DATE</p>
+                                  <div class="input-group ">
+                                      <div class="input-group-prepend">
+                                          <div class="input-group-text">
+                                              <i class="typcn typcn-calendar-outline tx-24 lh--9 op-6"></i>
+                                          </div>
+                                      </div><input class="form-control  fc-datepicker" id="cdate" placeholder="MM/DD/YYYY" type="date">
+                                  </div>
+                              </div>
+                          </div>
+                          
+                            <div class="modal-footer">
+                              <button class="btn ripple btn-outline-primary" type="button" >Save & New</button>
+                          </div>
+                      </div>
+                   </div>
+                  </div>
+              </div>
+            </div>
+        </div>
+          <!--Internal Fileuploads js-->
+          <script src="../assets/plugins/fileuploads/js/fileupload.js"></script>
+          <script src="../assets/plugins/fileuploads/js/file-upload.js"></script>
+  
+          <!--Internal Fancy uploader js-->
+          <script src="../assets/plugins/fancyuploder/jquery.ui.widget.js"></script>
+          <script src="../assets/plugins/fancyuploder/jquery.fileupload.js"></script>
+          <script src="../assets/plugins/fancyuploder/jquery.iframe-transport.js"></script>
+          <script src="../assets/plugins/fancyuploder/jquery.fancy-fileupload.js"></script>
+          <script src="../assets/plugins/fancyuploder/fancy-uploader.js"></script>
+  
+  <script src="../jsfiles/newitem.js"></script>
+      
+  <script src="../jsfiles/items_opt.js"></script>

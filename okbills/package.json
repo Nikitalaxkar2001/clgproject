@@ -1,0 +1,20 @@
+{
+  "name": "okbills",
+  "version": "1.0.0",
+  "description": "OKbills Business Accounting Desktop software",
+  "main": "./jsfiles/index.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "author": "OKLABS",
+  "license": "ISC",
+  "dependencies": {
+    "device-uuid": "^1.0.4",
+    "electron-alert": "^0.1.11",
+    "google-libphonenumber": "^3.2.15",
+    "jquery": "^3.5.1",
+    "node-notifier": "^8.0.0",
+    "sqlite3": "^5.0.0",
+    "sweetalert2": "^10.9.1"
+  }
+}
